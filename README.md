@@ -5,7 +5,7 @@
 ~/.bash_history (inspect contents)
 
 ## Commands and History
-- Realise I made my manjaro partion install my home folder mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
+- Realise I made my Manjaro installation partion the /home mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
 - `$ su`
 - `$ sudo adduser denver sudo`
 - reboot
@@ -82,3 +82,6 @@ Install and configure steam
 - head to your settings and paste in the new ssh key
 - okay back to the repo for this file
 - `$ git clone git@github.com:DrTexxOfficial/debian-10-install-history.git`
+- more fun git configuration before we commit and push
+- `$ git config --global user.email "<github-private-commit-email>"`
+- `$ git config --global user.name "DrTexxOfficial"`
