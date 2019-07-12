@@ -103,3 +103,11 @@ Get python3 stuff set-up
 - `$ python3 -m pip install pip --upgrade`
 - `$ sudo apt-get install python3-tk python3-xlib python3-dbus libasound2-dev`
 - `$ sudo apt-get install python3-dev`
+
+Install atom via apt instead of flatpak
+- `$ sudo apt install wget`
+- `$ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -`
+- `$ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'`
+- `$ sudo apt update`
+- `$ sudo apt install atom`
+- `$ apm install script`
