@@ -97,3 +97,9 @@ Beat Hazard 2 Open Mic workaround ***(WORK IN PROGRESS)***
 - Under the Recording tab of pavucontrol, change the input sink to be "Monitor Source of Simultaneous output to Built-in Audio Analog Stereo"
 - to later remove the device, to remove the device: `$ pactl unload-module module-combine-sink`
 - NOTE: be sure to mute _playback_ of the new device, otherwise you'll get ugly double-audio issues (don't mute it's input!)
+
+Get python3 stuff set-up
+- `$ sudo apt install python3-venv` (venv for py3 virtual environments)
+- `$ python3 -m pip install pip --upgrade`
+- `$ sudo apt-get install python3-tk python3-xlib python3-dbus libasound2-dev`
+- `$ sudo apt-get install python3-dev`
