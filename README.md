@@ -116,3 +116,20 @@ Install atom via apt instead of flatpak
 
 Install htop
 - `$ sudo apt install htop`
+
+Install TriggerCMD v1.0.1 ***NOT GOTTEN WORKING YET, NECCESSARY?***
+- install curl
+- `$ sudo apt install curl`
+- install npm
+- `$ sudo apt install nodejs npm --upgrade`
+- enable legacy support for tray icons
+- install this gnome extension to get legacy tray icon support: https://extensions.gnome.org/extension/1031/topicons/
+- install triggercmd
+- `$ sudo apt install ~/Applications/PACKAGES/triggercmdagent_1.0.1_all.deb`
+- go to https://www.triggercmd.com/user/computer/create and copy your token
+- `$ triggercmdagent`
+- paste in your token when prompted
+- `$ sudo /usr/share/triggercmdagent/app/src/installdaemon.sh`
+- Now you should see your Raspberry Pi in your TRIGGERcmd account.
+- reboot
+- Edit /root/.TRIGGERcmdData/commands.json to add or remove commands.
