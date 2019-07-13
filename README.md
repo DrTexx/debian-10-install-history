@@ -133,3 +133,7 @@ Install TriggerCMD v1.0.1 ***NOT GOTTEN WORKING YET, NECCESSARY?***
 - Now you should see your Raspberry Pi in your TRIGGERcmd account.
 - reboot
 - Edit /root/.TRIGGERcmdData/commands.json to add or remove commands.
+
+Get bluetooth headphones working properly
+- (refer to instructions in https://github.com/drtexxofficial/fresh-debian-install-steps)
+- note: only thing that didn't work as normal is that the file to be deleted - `/var/lib/gdm3/.config/systemd/user/sockets.target.wants/pulseaudio.socket` - doesn't exist at this location. ***will need to look into further if pulseaudio still begins at startup in the same fashion, what does all this mean? Still not 100% sure honestly***
