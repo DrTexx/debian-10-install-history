@@ -113,3 +113,6 @@ Install atom via apt instead of flatpak
 - `$ apm install script`
 - _ensure all settings have been duplicated!_
 - `$ flatpak uninstall io.atom.Atom`
+
+Install htop
+- `$ sudo apt install htop`
