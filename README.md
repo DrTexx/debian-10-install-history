@@ -111,3 +111,5 @@ Install atom via apt instead of flatpak
 - `$ sudo apt update`
 - `$ sudo apt install atom`
 - `$ apm install script`
+- _ensure all settings have been duplicated!_
+- `$ flatpak uninstall io.atom.Atom`
