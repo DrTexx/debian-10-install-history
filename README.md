@@ -144,3 +144,6 @@ Install Project M
 
 Install Kodi
 - `$ sudo apt install kodi`
+
+Install Suru++ 30 Barcelona icon theme
+- follow instuctions found [here](https://github.com/gusbemacbe/suru-plus/wiki/Installing-the-stable-version-with-CLI) (install in home for GTK)
