@@ -149,3 +149,11 @@ Install Suru++ 30 Barcelona icon theme
 - follow instuctions found [here](https://github.com/gusbemacbe/suru-plus/wiki/Installing-the-stable-version-with-CLI) (install in home for GTK)
 
 - `$ sudo update-desktop-database` (updates database for .desktop files, store custom made ones in ~/.local/share/applications)
+
+Add en_US.UTF-8 locale for Source Engine based games
+- `$ sudo dpkg-reconfigure locales`
+- press space to add locales to list (add en_US.UTF-8)
+- press tab to highlight 'ok' and then press enter
+- set default locale as Australian (en_AU.UTF-8)
+- press enter to continue
+- done!
