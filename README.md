@@ -157,3 +157,9 @@ Add en_US.UTF-8 locale for Source Engine based games
 - set default locale as Australian (en_AU.UTF-8)
 - press enter to continue
 - done!
+
+Install discord via flatpak
+- `$ flatpak install com.discordapp.Discord`
+
+- `$ sudo apt update`
+- `$ sudo apt upgrade`
