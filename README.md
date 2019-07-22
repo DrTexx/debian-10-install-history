@@ -168,3 +168,6 @@ Reinstall discord via snap (instead of flatpak)
 - nevermind the flatpak version is still broken (21-Jul-2019)
 - `$ flatpak uninstall com.discordapp.Discord`
 - `$ snap install discord`
+
+Install Slack via Snap (flatpack is unofficial)
+- `$ snap install slack --classic`
