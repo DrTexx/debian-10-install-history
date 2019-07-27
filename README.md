@@ -180,3 +180,5 @@ Install tor and torbrowser
 - `$ ln -s ~/Applications/tor-browser_en-US/start-tor-browser.desktop start-tor-browser.desktop` (double check that this path is accurate!)
 - You should now be able to type "tor" into your desktop search and launch the tor browser from there (in the event of issues try running `$ sudo update-desktop-database`)
 
+Install youtube-dl
+- `$ snap install youtube-dl`
