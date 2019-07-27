@@ -171,3 +171,12 @@ Reinstall discord via snap (instead of flatpak)
 
 Install Slack via Snap (flatpack is unofficial)
 - `$ snap install slack --classic`
+
+Install tor and torbrowser
+- `$ sudo apt install tor` (for logging into Facebook because they've already got enough of my data)
+- Download torbrowser from [here](https://www.torproject.org/download/) and put the contents in it's own folder in ~/Applications (in this instance, the folder was already called tor-browser_en-US)
+- navigate to ~/Applications/tor-browser_en-US
+- `$ ./start-tor-browser.desktop` (this must be run once before the .desktop file will function as intended or is even worth linking)
+- `$ ln -s ~/Applications/tor-browser_en-US/start-tor-browser.desktop start-tor-browser.desktop` (double check that this path is accurate!)
+- You should now be able to type "tor" into your desktop search and launch the tor browser from there (in the event of issues try running `$ sudo update-desktop-database`)
+
