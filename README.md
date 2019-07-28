@@ -182,3 +182,9 @@ Install tor and torbrowser
 
 Install youtube-dl
 - `$ snap install youtube-dl`
+
+Install Arc theme for Debian
+- `$ sudo apt install arc-theme`
+- Open tweak tool and change the following settings:
+- Appearance > Themes > Applications > "Arc-Dark"
+- Appearance > Themes > Shell > "Arc-Dark"
