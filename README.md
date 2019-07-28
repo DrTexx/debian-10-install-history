@@ -188,3 +188,6 @@ Install Arc theme for Debian
 - Open tweak tool and change the following settings:
 - Appearance > Themes > Applications > "Arc-Dark"
 - Appearance > Themes > Shell > "Arc-Dark"
+
+Install qbittorrent
+- `$ sudo apt install qbittorrent`
