@@ -191,3 +191,5 @@ Install Arc theme for Debian
 
 Install qbittorrent
 - `$ sudo apt install qbittorrent`
+
+Install Skype via gnome-software (it's a flatpak) (primarily for emergency calls using Skype credit)
