@@ -193,3 +193,5 @@ Install qbittorrent
 - `$ sudo apt install qbittorrent`
 
 Install Skype via gnome-software (it's a flatpak) (primarily for emergency calls using Skype credit)
+
+Download Balena Etcher AppImage and put in ~/Applications/AppImages
