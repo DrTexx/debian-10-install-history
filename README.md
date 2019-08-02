@@ -204,3 +204,6 @@ make
 ```
 
 `sudo ln -s [path to V repo]/v /usr/local/bin/v`
+
+Install vscode via Snap
+`snap install vscode --classic`
