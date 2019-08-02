@@ -207,3 +207,14 @@ make
 
 Install vscode via Snap
 `snap install vscode --classic`
+
+Install mercurial (so we can get OpenTyrian and build it from source)
+`sudo apt install mercurial`
+
+Download, build and run OpenTyrian
+- `$ hg clone https://bitbucket.org/opentyrian/opentyrian`
+- `$ sudo apt install libsdl-dev libsdl-net1.2-dev` (used for Simple DirectMedia Layer, which I believe appears to be graphics related)
+copy the 'data' folder from [this file](http://www.camanis.net/opentyrian/releases/opentyrian-2.1.20130907-w32-bundle.zip) into the same directory as OpenTyrian (looking like this: [root OpenTyrian folder]/data)
+- navigate to the opentyrian folder
+`$ make`
+- Done! Enjoy OpenTyrian on Linux Debian 10 Buster!
