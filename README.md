@@ -218,3 +218,6 @@ copy the 'data' folder from [this file](http://www.camanis.net/opentyrian/releas
 - navigate to the opentyrian folder
 `$ make`
 - Done! Enjoy OpenTyrian on Linux Debian 10 Buster!
+
+Install Zoom for video conferencing
+`$ flatpak install flathub us.zoom.Zoom`
