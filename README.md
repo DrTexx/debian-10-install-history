@@ -221,3 +221,7 @@ copy the 'data' folder from [this file](http://www.camanis.net/opentyrian/releas
 
 Install Zoom for video conferencing
 `$ flatpak install flathub us.zoom.Zoom`
+
+Install OBS studio
+`$ sudo apt install ffmpeg`
+`$ sudo apt install obs-studio`
