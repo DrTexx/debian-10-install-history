@@ -225,3 +225,19 @@ Install Zoom for video conferencing
 Install OBS studio
 `$ sudo apt install ffmpeg`
 `$ sudo apt install obs-studio`
+
+Install VirtualBox ([original guide](https://www.virtualbox.org/wiki/Linux_Downloads))
+- create `/etc/apt/sources.list.d/virtualbox.list`
+- make the contents this: `deb https://download.virtualbox.org/virtualbox/debian buster contrib`
+- `$ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -` (download and register Oracle public-key)
+- `$ sudo apt update`
+- `$ sudo apt install virtualbox-6.0`
+
+Install net-tools for ifconfig command ***just using `ip addr` works, is this necessary?***
+- `$ sudo apt install net-tools`
+
+Install zenmap for network topology scanning
+- `$ sudo apt install zenmap`
+
+Install metasploit
+- `$ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall`
