@@ -241,3 +241,5 @@ Install zenmap for network topology scanning
 
 Install metasploit
 - `$ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall`
+
+Enable alternatetab extension in tweak tool
