@@ -243,3 +243,6 @@ Install metasploit
 - `$ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall`
 
 Enable alternatetab extension in tweak tool
+
+Install Kodi via flatpak
+- `$ flatpak install flathub tv.kodi.Kodi`
