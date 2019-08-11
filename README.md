@@ -246,3 +246,12 @@ Enable alternatetab extension in tweak tool
 
 Install Kodi via flatpak
 - `$ flatpak install flathub tv.kodi.Kodi`
+
+Install netflix addon in Kodi (Leia onwards only, needs DRM support) ([original guide](https://forum.kodi.tv/showthread.php?tid=329767))
+- `$ pip3 install --user pycryptodomex`
+- download the [netflix repository](https://github.com/castagnait/repository.castagnait/raw/master/repository.castagnait-1.0.0.zip)
+- install the addon from within Kodi
+- install Netflix from the Netflix Addon Repository
+- configure with username and password
+- install any required dependencies when prompted
+- done!
