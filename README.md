@@ -258,3 +258,7 @@ Install netflix addon in Kodi (Leia onwards only, needs DRM support) ([original 
 
 Install flatpak-builder for development of flatpaks
 - `$ sudo apt install flatpak-builder`
+
+Add network printers to PC
+- `$ sudo apt install task-print-server`
+- add the printer in gnome settings
