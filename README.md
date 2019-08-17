@@ -255,3 +255,6 @@ Install netflix addon in Kodi (Leia onwards only, needs DRM support) ([original 
 - configure with username and password
 - install any required dependencies when prompted
 - done!
+
+Install flatpak-builder for development of flatpaks
+- `$ sudo apt install flatpak-builder`
