@@ -265,3 +265,7 @@ Add network printers to PC
 
 Uninstall Zoom
 - `$ flatpak remove zoom`
+
+Install UFW (Uncomplicated Firewall)
+- `$ sudo apt install ufw`
+- `$ sudo ufw enable
