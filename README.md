@@ -262,3 +262,6 @@ Install flatpak-builder for development of flatpaks
 Add network printers to PC
 - `$ sudo apt install task-print-server`
 - add the printer in gnome settings
+
+Uninstall Zoom
+- `$ flatpak remove zoom`
