@@ -285,3 +285,6 @@ $ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 ```
 - sign all commits automatically
 	- `$ git config --global commit.gpgsign true`
+- fix usage of old username
+	- `$ git config --global user.name DrTexx`
+	- `$ git config --global user.email {github-noreply-email}`
