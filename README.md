@@ -291,3 +291,5 @@ $ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 
 Install Dropbox
 - `$ sudo apt install nautilus-dropbox`
+- `$ sudo apt install python-gpg` (optional package for verification) ***dropbox actually uses python-gpgme, however it is depreciated in Debian 10. This isn't a necessary install***
+- Run Dropbox
