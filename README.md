@@ -275,7 +275,8 @@ Setup GPG keys for github
 - [adding GPG keys to GitHub account](https://help.github.com/en/articles/adding-a-new-gpg-key-to-your-github-account)
 - [associating GPG key with git](https://help.github.com/en/articles/telling-git-about-your-signing-key)
 
-- `$ git config --global user.signingkey {KEY-ID}`
+- add key to git
+	- `$ git config --global user.signingkey {KEY-ID}`
 
 - To add your GPG key to your bash profile, paste the text below:
 ```
