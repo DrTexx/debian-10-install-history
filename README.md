@@ -288,3 +288,6 @@ $ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 - fix usage of old username
 	- `$ git config --global user.name DrTexx`
 	- `$ git config --global user.email {github-noreply-email}`
+
+Install Dropbox
+- `$ sudo apt install nautilus-dropbox`
