@@ -2,8 +2,10 @@
 ## General tips and commands
 ### Bash
 #### View command history
-~/.bash_history (inspect contents)
-
+`$ ~/.bash_history (inspect contents)`
+### Gpg
+#### Display generated keys and show their UIDs
+`$ gpg --list-secret-keys --keyid-format=long`
 ## Commands and History
 - Realise I made my Manjaro installation partion the /home mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
 - `$ su`
@@ -293,3 +295,9 @@ Install Dropbox
 - `$ sudo apt install nautilus-dropbox`
 - `$ sudo apt install python-gpg` (optional package for verification) ***dropbox actually uses python-gpgme, however it is depreciated in Debian 10. This isn't a necessary install***
 - Run Dropbox
+
+Install keybase
+- `$ cd ~/Downloads/`
+- `$ curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb`
+- `$ sudo apt install ./keybase_amd64.deb` (note: this will add the keybase repository automatically)
+- `$ run_keybase`
