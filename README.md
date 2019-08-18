@@ -268,4 +268,19 @@ Uninstall Zoom
 
 Install UFW (Uncomplicated Firewall)
 - `$ sudo apt install ufw`
-- `$ sudo ufw enable
+- `$ sudo ufw enable`
+
+Setup GPG keys for github
+- [generating GPG keys](https://help.github.com/en/articles/generating-a-new-gpg-key)
+- [adding GPG keys to GitHub account](https://help.github.com/en/articles/adding-a-new-gpg-key-to-your-github-account)
+- [associating GPG key with git](https://help.github.com/en/articles/telling-git-about-your-signing-key)
+
+- `$ git config --global user.signingkey {KEY-ID}`
+
+- To add your GPG key to your bash profile, paste the text below:
+```
+$ test -r ~/.bash_profile && echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
+$ echo 'export GPG_TTY=$(tty)' >> ~/.profile
+```
+- sign all commits automatically
+	- `$ git config --global commit.gpgsign true`
