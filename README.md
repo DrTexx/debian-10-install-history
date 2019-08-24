@@ -311,3 +311,9 @@ Install some requirements for V (graphics dependencies)
 
 Install dependencies for audio-visualiser-python
 - `$ sudo apt install libjpeg-dev zlib1g-dev`
+
+Install 2 to 3 (convert python2 to python3 syntax)
+- `$ sudo apt install 2to3`
+
+Install dependencies for PyAudio package
+- `$ sudo apt install portaudio19-dev python-all-dev`
