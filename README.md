@@ -301,3 +301,7 @@ Install keybase
 - `$ curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb`
 - `$ sudo apt install ./keybase_amd64.deb` (note: this will add the keybase repository automatically)
 - `$ run_keybase`
+
+Migrate to official VSCode Snap
+- `$ snap remove vscode`
+- `$ snap install code --classic`
