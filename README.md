@@ -305,3 +305,9 @@ Install keybase
 Migrate to official VSCode Snap
 - `$ snap remove vscode`
 - `$ snap install code --classic`
+
+Install some requirements for V (graphics dependencies)
+- `$ sudo apt install libglfw3 libglfw3-dev libfreetype6-dev libssl-dev`
+
+Install dependencies for audio-visualiser-python
+- `$ sudo apt install libjpeg-dev zlib1g-dev`
