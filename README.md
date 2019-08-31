@@ -317,3 +317,6 @@ Install 2 to 3 (convert python2 to python3 syntax)
 
 Install dependencies for PyAudio package
 - `$ sudo apt install portaudio19-dev python-all-dev`
+
+Install audacity
+- `$ sudo apt install audacity`
