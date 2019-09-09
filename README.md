@@ -291,7 +291,7 @@ $ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 	- `$ git config --global user.name DrTexx`
 	- `$ git config --global user.email {github-noreply-email}`
 
-Install Dropbox
+Install Dropbox (later uninstalled, see further down for alternative install method)
 - `$ sudo apt install nautilus-dropbox`
 - `$ sudo apt install python-gpg` (optional package for verification) ***dropbox actually uses python-gpgme, however it is depreciated in Debian 10. This isn't a necessary install***
 - Run Dropbox
@@ -320,3 +320,28 @@ Install dependencies for PyAudio package
 
 Install audacity
 - `$ sudo apt install audacity`
+
+Reinstall dropbox via different means
+- `$ sudo apt remove nautilus-dropbox`
+- download the latest source [here](https://linux.dropbox.com/packages/) (https://linux.dropbox.com/packages/)
+- install requirements for building dropbox from source
+- `$ sudo apt install gnome-common libnautilus-extension-dev python3-gi python3-docutils`
+- extract the source and navigate into the directory
+- `$ ./configure`
+- `$ make`
+- `$ make install`
+- install a requirement for dropbox installer itself
+- `$ sudo apt install python3-gpg`
+- `$ ./dropbox start -i`
+- install the proprietary binaries for dropbox when instructed by the installer
+
+Uninstall dropbox because they broke selective sync
+- ***INSTRUCTIONS TODO*** (basically opposite of above installs using apt)
+
+Install pCloud
+- download AppImage and move it to ~/Applications/AppImages
+- make pcloud executable
+- run pcloud
+
+Install GIMP
+- `$ sudo apt install gimp`
