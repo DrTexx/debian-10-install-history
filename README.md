@@ -345,3 +345,13 @@ Install pCloud
 
 Install GIMP
 - `$ sudo apt install gimp`
+
+In nvidia-settings ([original tutorial](https://www.techticity.com/howto/how-to-fix-nvidia-vsync-on-linux-with-proprietary-drivers/))
+- x server display configuration
+		- advanced...
+		- enable "force full composition pipeline"
+		- "Save to X Configuration File" to make permanent ***I didn't do this***
+- x screen 0
+		- OpenGL settings
+				- sync to Vblank = False
+				- allow flipping = False
