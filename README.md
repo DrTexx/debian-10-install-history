@@ -355,3 +355,6 @@ In nvidia-settings ([original tutorial](https://www.techticity.com/howto/how-to-
 		- OpenGL settings
 				- sync to Vblank = False
 				- allow flipping = False
+
+Turn a microphone into an output stream using pactl (loopback module)
+- `$ pactl load-module module-loopback`
