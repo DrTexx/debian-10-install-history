@@ -403,3 +403,6 @@ sudo rm -rf /home/rootfs-pkgs.txt /home/run /home/sbin
 sudo rm -rf snap
 sudo rm -rf srv sys usr var
 sudo rm -rf tmp
+
+Install PCSX2 via Flatpak
+- `$ flatpak install flathub net.pcsx2.PCSX2`
