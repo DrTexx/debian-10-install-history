@@ -358,3 +358,20 @@ In nvidia-settings ([original tutorial](https://www.techticity.com/howto/how-to-
 
 Turn a microphone into an output stream using pactl (loopback module)
 - `$ pactl load-module module-loopback`
+
+Install postman (API testing thing)
+- `$ snap install postman`
+
+Uninstall postman because how the hell do you use it
+- `$ snap remove postman`
+
+Install Cura 4.3.0 as AppImage
+- Download from https://ultimaker.com/software/ultimaker-cura
+- Put the AppImage in ~/Applications/AppImages
+- Make it executable (from CLI, in directory, do `$ chmod +x Ultimaker_Cura-4.3.0.AppImage`)
+- Double-click that bad boy to launch.
+
+Install RPCS3 as AppImage
+- ***add instructions***
+- Put in ~/Applications/AppImages
+- Make it executable
