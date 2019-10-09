@@ -6,6 +6,11 @@
 ### Gpg
 #### Display generated keys and show their UIDs
 `$ gpg --list-secret-keys --keyid-format=long`
+### Links
+#### View the full path of a symlink
+`$ readlink -f [symlink_name]`
+(an alternative in Debian 10 is 'realpath', however it is not available in all linux distributions)
+
 ## Commands and History
 - Realise I made my Manjaro installation partion the /home mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
 - `$ su`
@@ -375,3 +380,26 @@ Install RPCS3 as AppImage
 - ***add instructions***
 - Put in ~/Applications/AppImages
 - Make it executable
+
+### DANGER - READ INSTRUCTIONS, DON'T DELETE YOUR BLOODY ROOT
+Remove all old folder structure under ~/home
+- It should only be ~/home/denver, so we'll delete all the stuff I screwed up transfering from Manjaro
+- ***WARNING: RUN THE FOLLOWING UNDER /home!!!***
+- ***DO NOT DO THIS IN THE ROOT DIRECTORY IN CASE YOU SCREW IT UP***
+sudo mv /home/home /home/o_home
+sudo rm -rf /home/o_home
+sudo rm -rf /home/bin
+sudo rm -rf /home/boot
+sudo rm -rf /home/dev
+sudo rm -rf /home/desktopfs-pkgs.txt
+sudo rm -rf /home/etc
+sudo rm -rf /home/lib /home/lib64
+sudo rm -rf /home/lost+found
+sudo rm -rf /home/mnt
+sudo rm -rf /home/opt
+sudo rm -rf /home/proc
+sudo rm -rf /home/root
+sudo rm -rf /home/rootfs-pkgs.txt /home/run /home/sbin
+sudo rm -rf snap
+sudo rm -rf srv sys usr var
+sudo rm -rf tmp
