@@ -420,5 +420,9 @@ Update Nvidia driver from v418.74 to v430.50 ([original guide](https://linuxconf
 - Check the readme for driver version 430.50 [here](http://us.download.nvidia.com/XFree86/Linux-x86_64/430.50/README/installdriver.html)
 - `$ systemctl set-default multi-user.target` ("Reboot to multi-user runlevel. This will disable the GUI user after reboot")
 - `$ systemctl reboot` (reboot system)
+- change default keyboard layout back to qwerty with `$ dpkg-reconfigure keyboard-configuration`
+- `$ sudo apt remove nvidia-driver`
+- `$ sudo apt autoremove`
+- `$ sudo reboot`
 - `$ `
 - `$ `
