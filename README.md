@@ -413,3 +413,12 @@ Install and configure etckeeper (version control for /etc)
 - `$ sudo etckeeper init`
 - `$ sudo nano /etc/etckeeper/etckeeper.conf` (for config settings, no changes required but here if needed prior to next step) (this might take a second)
 - `$ sudo etckeeper commit "First commit of my /etc directory"`
+
+Update Nvidia driver from v418.74 to v430.50 ([original guide](https://linuxconfig.org/how-to-install-nvidia-driver-on-debian-10-buster-linux) - not strictly followed)
+- Download latest "long lived branch version" from [here](https://www.nvidia.com/en-us/drivers/unix/).
+- Unplug second monitor (just in-case, it's broken stuff in the past)
+- Check the readme for driver version 430.50 [here](http://us.download.nvidia.com/XFree86/Linux-x86_64/430.50/README/installdriver.html)
+- `$ systemctl set-default multi-user.target` ("Reboot to multi-user runlevel. This will disable the GUI user after reboot")
+- `$ systemctl reboot` (reboot system)
+- `$ `
+- `$ `
