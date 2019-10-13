@@ -406,3 +406,10 @@ sudo rm -rf tmp
 
 Install PCSX2 via Flatpak
 - `$ flatpak install flathub net.pcsx2.PCSX2`
+
+Install and configure etckeeper (version control for /etc)
+- `$ sudo apt install etckeeper`
+- `$ cd /etc`
+- `$ sudo etckeeper init`
+- `$ sudo nano /etc/etckeeper/etckeeper.conf` (for config settings, no changes required but here if needed prior to next step) (this might take a second)
+- `$ sudo etckeeper commit "First commit of my /etc directory"`
