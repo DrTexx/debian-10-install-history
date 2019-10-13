@@ -424,5 +424,7 @@ Update Nvidia driver from v418.74 to v430.50 ([original guide](https://linuxconf
 - `$ sudo apt remove nvidia-driver`
 - `$ sudo apt autoremove`
 - `$ sudo reboot`
+- `$ sudo apt purge nvidia.` (uninstall anything nvidia related and associated config files)
+- reboot and test if anything still installed
 - `$ `
 - `$ `
