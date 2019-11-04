@@ -425,6 +425,38 @@ Update Nvidia driver from v418.74 to v430.50 ([original guide](https://linuxconf
 - `$ sudo apt autoremove`
 - `$ sudo reboot`
 - `$ sudo apt purge nvidia.` (uninstall anything nvidia related and associated config files)
-- reboot and test if anything still installed
+- reboot and test if anything still installed (looks good!)
+... (bunch of other stuff, check paper)
 - `$ `
-- `$ `
+- sudo apt install nvidia-settings ***wait don't do that***
+- `$ systemctl set-default graphical.target`
+
+Install Wine (fingers crossed) ([tutorial used](https://linuxhint.com/installing_wine_debian_10/))
+- `$ sudo apt update`
+- `$ sudo apt install wine wine64 wine32 winbind winetricks`
+- when prompted, enable WINS server stuff
+
+Install Real-time Corrupter (WINE)
+- Install mono (complete) ([tutorial used](https://www.mono-project.com/download/stable/#download-lin-debian))
+		- `$ sudo apt install apt-transport-https dirmngr gnupg ca-certificates` (all of these dependency packages were already installed)
+		- `$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF`
+		- `$ echo "deb https://download.mono-project.com/repo/debian stable-buster main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list`
+		- `$ sudo apt update`
+		- `$ sudo apt install mono-complete` (heads up, it's ~500mb)
+		***IN REFLECTION, I MIGHT HAVE GONE ABOUT THIS WRONG, YOU MAY JUST NEED THE STEPS BELOW***
+- Install wine-mono ([instructions used](https://askubuntu.com/questions/841847/mono-package-for-wine-is-not-installed))
+		- Download wine-mono-4.9.3.msi from [here](http://dl.winehq.org/wine/wine-mono/)
+		- `$ wine64 uninstaller`
+		- select 'install' from the GUI
+		- select the downloaded .msi package
+		- press "ok"
+- Run RTC
+		- navigate to the directory containing RTC_Launcher.exe (should be ~/Applications/Windows/real-time_corruptor)
+		- `$ wine RTC_Launcher.exe`
+		- uh oh it's gotten very complicated.
+
+Update all python3 pip/pypi related stuff
+- `$ pip3 install setuptools wheel pip --upgrade`
+
+Uninstall postman
+- `$ snap remove postman`
