@@ -460,3 +460,11 @@ Update all python3 pip/pypi related stuff
 
 Uninstall postman
 - `$ snap remove postman`
+
+Install volux in a virtual environment (can be used to make other venv held packages accessible outside of venv)
+- `$ cd ~/Applications`
+- `$ python3 -m venv volux`
+- `$ source volux/bin/activate`
+- `$ pip install volux`
+- `$ sudo ln -s /home/denver/Applications/volux/bin/volux /usr/local/bin/volux`
+- Finished! You can now access the virtual environments /bin/volux from your own command-line! (simply type `volux` anywhere)
