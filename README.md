@@ -10,6 +10,9 @@
 #### View the full path of a symlink
 `$ readlink -f [symlink_name]`
 (an alternative in Debian 10 is 'realpath', however it is not available in all linux distributions)
+### Checksums
+#### Checking sha256 sums
+`$ sha256sum <file>`
 
 ## Commands and History
 - Realise I made my Manjaro installation partion the /home mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
