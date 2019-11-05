@@ -6,6 +6,8 @@
 ### Gpg
 #### Display generated keys and show their UIDs
 `$ gpg --list-secret-keys --keyid-format=long`
+or for shorted IDs
+`$ gpg --list-keys --keyid-format short`
 ### Links
 #### View the full path of a symlink
 `$ readlink -f [symlink_name]`
