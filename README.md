@@ -473,3 +473,6 @@ Install volux in a virtual environment (can be used to make other venv held pack
 - `$ pip install volux`
 - `$ sudo ln -s /home/denver/Applications/volux/bin/volux /usr/local/bin/volux`
 - Finished! You can now access the virtual environments /bin/volux from your own command-line! (simply type `volux` anywhere)
+
+Install Vim
+- `$ sudo apt install vim`
