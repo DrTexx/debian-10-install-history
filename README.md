@@ -18,6 +18,11 @@ or for shorted IDs
 ### Venv
 #### Entering venvs made easy
 `$ nano ~/.bashrc` (add the line `alias [alias_name]="{command} [command args]"`)
+### Pinentry settings
+#### List available prompt types
+`$ ls /usr/bin | grep pinentry`
+#### Change default prompt type
+
 
 Once you've saved the file and re-opened bash, you can type `[alias_name]` to execute `{command} [command args]`
 
@@ -486,3 +491,6 @@ Install Vim
 
 Install font: _'Hack'_
 - `$ sudo apt install fonts-hack`
+
+Change prompt back to askpass (why it recently changed to TTY-only I do not know. Update? It's still the same window for GPG prompts)
+- `$ sudo apt install ssh-askpass-gnome ssh-askpass`
