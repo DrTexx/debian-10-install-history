@@ -15,6 +15,13 @@ or for shorted IDs
 ### Checksums
 #### Checking sha256 sums
 `$ sha256sum <file>`
+### Venv
+#### Entering venvs made easy
+`$ nano ~/.bashrc` (add the line `alias [alias_name]="{command} [command args]"`)
+
+Once you've saved the file and re-opened bash, you can type `[alias_name]` to execute `{command} [command args]`
+
+For example, adding the line `alias voluxDE="source /home/denver/github/volux/venv_testing/bin/activate` would allow you to enter the venv 'venv_testing' just by typing `voluxDE`.
 
 ## Commands and History
 - Realise I made my Manjaro installation partion the /home mount for Debian 10... whoops ***WE NEED TO ADDRESS THIS LATER***
