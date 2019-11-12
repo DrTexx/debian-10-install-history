@@ -476,3 +476,6 @@ Install volux in a virtual environment (can be used to make other venv held pack
 
 Install Vim
 - `$ sudo apt install vim`
+
+Install font: _'Hack'_
+- `$ sudo apt install fonts-hack`
