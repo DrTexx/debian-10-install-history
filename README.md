@@ -499,3 +499,5 @@ Force usage of fullscreen ssh auth prompts instead of cli prompts ([info source]
 - `$ /usr/bin/gnome-keyring-daemon --start --components=pkcs11` (find path to GUI prompt)
 - `/run/user/1000/keyring/ssh` (output I recieved)
 - `$ export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"` (export the SSH_AUTH_SOCK env variable to gnome-keyring-daemon)
+
+***add fstab changes***
