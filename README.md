@@ -495,7 +495,7 @@ Install font: _'Hack'_
 Change prompt back to askpass (why it recently changed to TTY-only I do not know. Update? It's still the same window for GPG prompts)
 - `$ sudo apt install ssh-askpass-gnome ssh-askpass`
 
-Force usage of fullscreen ssh auth prompts instead of cli prompts
+Force usage of fullscreen ssh auth prompts instead of cli prompts ([info source](https://unix.stackexchange.com/questions/460237/gnome-keyring-daemon-sometimes-not-asking-for-passphrase-need-to-provide-it-via?noredirect=1))
 - `$ /usr/bin/gnome-keyring-daemon --start --components=pkcs11` (find path to GUI prompt)
 - `/run/user/1000/keyring/ssh` (output I recieved)
 - `$ export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"` (export the SSH_AUTH_SOCK env variable to gnome-keyring-daemon)
