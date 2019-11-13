@@ -501,3 +501,12 @@ Force usage of fullscreen ssh auth prompts instead of cli prompts ([info source]
 - `$ export SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"` (export the SSH_AUTH_SOCK env variable to gnome-keyring-daemon)
 
 ***add fstab changes***
+
+Install Lutris
+- `$ echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_9.0/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list`
+- `$ wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_9.0/Release.key -O- | sudo apt-key add -`
+- `$ sudo apt-get update`
+- `$ sudo apt-get install lutris`
+
+Install Java Runtime Environment
+- `$ sudo apt install default-jre`
