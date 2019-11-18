@@ -510,3 +510,8 @@ Install Lutris
 
 Install Java Runtime Environment
 - `$ sudo apt install default-jre`
+
+Install MultiBootUSB
+- Download MultiBootUSB from [here](https://github.com/mbusb/multibootusb/releases) (or [here](http://multibootusb.org/page_download/) if you'd rather use the site than repo)
+- Move .deb file to ~/Applications/PACKAGES/
+- `sudo apt install ~/Applications/PACKAGES/python3-multibootusb_9.2.0-1_all.deb`
