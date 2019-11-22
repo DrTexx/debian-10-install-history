@@ -514,10 +514,13 @@ Install Java Runtime Environment
 Install MultiBootUSB
 - Download MultiBootUSB from [here](https://github.com/mbusb/multibootusb/releases) (or [here](http://multibootusb.org/page_download/) if you'd rather use the site than repo)
 - Move .deb file to ~/Applications/PACKAGES/
-- `sudo apt install ~/Applications/PACKAGES/python3-multibootusb_9.2.0-1_all.deb`
+- `$ sudo apt install ~/Applications/PACKAGES/python3-multibootusb_9.2.0-1_all.deb`
 
 Install VMWare Workstation 15.5.1 Player for Linux 64-bit
 - Download from [here](https://my.vmware.com/en/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0)
 - move to ~/Applications/PACKAGES
 - navigate to ~/Applications/PACKAGES
-- `sudo bash ./VMware-Player-15.5.1-15018445.x86_64.bundle`
+- `$ sudo bash ./VMware-Player-15.5.1-15018445.x86_64.bundle`
+
+Install graphviz for pycallgraph2:
+- `$ sudo apt install graphviz`
