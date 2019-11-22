@@ -524,3 +524,27 @@ Install VMWare Workstation 15.5.1 Player for Linux 64-bit
 
 Install graphviz for pycallgraph2:
 - `$ sudo apt install graphviz`
+
+Install gephi for pycallgraph2:
+- Download from [here](https://gephi.org/)
+- Extract folder to ~/Applications/APPS
+- Install Java 8 (requirement) ("Installing OpenJDK 8" in [this guide](https://linuxize.com/post/install-java-on-debian-10/))
+	- `$ sudo apt update`
+	- `$ sudo apt install apt-transport-https ca-certificates wget dirmngr gnupg software-properties-common`
+	- `$ wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -`
+	- `$ sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/`
+	- `$ sudo apt update`
+	- `$ sudo apt install adoptopenjdk-8-hotspot`
+	- `$ java -version` (verify the installation by checking the Java version)
+	- you should get this output from the last command:
+	```
+	openjdk version "1.8.0_212"
+	OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b04)
+	OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b04, mixed mode)
+	```
+
+- `$ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module` (optional dependency)
+- `$ sudo ln -s ~/Applications/APPS/gephi-0.9.2/bin/gephi /usr/local/bin/gephi` (make it accessible from CLI)
+
+Install Gource because it's cool as heck
+- `$ sudo apt install gource`
