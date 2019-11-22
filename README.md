@@ -548,3 +548,6 @@ Install gephi for pycallgraph2:
 
 Install Gource because it's cool as heck
 - `$ sudo apt install gource`
+
+Install bash-doc (bash documentation)
+- `$ sudo apt install bash-doc`
