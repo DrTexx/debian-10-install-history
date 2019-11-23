@@ -551,3 +551,30 @@ Install Gource because it's cool as heck
 
 Install bash-doc (bash documentation)
 - `$ sudo apt install bash-doc`
+
+Install Docker Engine - Community ([guide used](https://docs.docker.com/install/linux/docker-ce/debian/))
+- Add repository
+		- `$ sudo apt update`
+		- `$ sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common` (install/check requirements for apt install over HTTPS)
+		- `$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -` (add docker's GPG key)
+		- `$ sudo apt-key fingerprint 0EBFCD88` (check key fingerprint is _9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88_)
+		- `$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"` (add source)
+- Install from repo
+		- `$ sudo apt update`
+		- `$ sudo apt-get install docker-ce docker-ce-cli containerd.io`
+- Test installation
+		- `$ sudo docker run hello-world` (verify docker installed correctly)
+
+Install flake8 linter for atom
+- `$ apm install linter-flake8 --verbose`
+
+Install flake8 (for use in linters)
+- `$ cd ~/Applications`
+- `$ python3 -m venv flake8`
+- `$ source flake8/bin/activate`
+- `$ pip install flake8`
+- `$ deactivate`
+- `$ sudo ln -s /home/denver/Applications/flake8/bin/flake8 /usr/local/bin/flake8`
+
+Install hunspell en-au
+- `$ sudo apt install hunspell-en-au`
