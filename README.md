@@ -589,3 +589,6 @@ Install black (for use in atom)
 - `$ pip install black`
 - `$ deactivate`
 - `$ sudo ln -s /home/denver/Applications/black/bin/black /usr/local/bin/black` (add to path)
+
+Install portaudio19-dev
+- `$ sudo apt install portaudio19-dev`
