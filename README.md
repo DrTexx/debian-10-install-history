@@ -574,10 +574,18 @@ Install flake8 (for use in linters)
 - `$ source flake8/bin/activate`
 - `$ pip install flake8`
 - `$ deactivate`
-- `$ sudo ln -s /home/denver/Applications/flake8/bin/flake8 /usr/local/bin/flake8`
+- `$ sudo ln -s /home/denver/Applications/flake8/bin/flake8 /usr/local/bin/flake8` (add to path)
 
 Install hunspell en-au
 - `$ sudo apt install hunspell-en-au`
 
 Install black plugin for atom
 - `$ apm install python-black --verbose`
+
+Install black (for use in atom)
+- `$ cd ~/Applications`
+- `$ python3 -m venv black`
+- `$ source black/bin/activate`
+- `$ pip install black`
+- `$ deactivate`
+- `$ sudo ln -s /home/denver/Applications/black/bin/black /usr/local/bin/black` (add to path)
