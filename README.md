@@ -578,3 +578,6 @@ Install flake8 (for use in linters)
 
 Install hunspell en-au
 - `$ sudo apt install hunspell-en-au`
+
+Install black plugin for atom
+- `$ apm install python-black --verbose`
