@@ -592,3 +592,16 @@ Install black (for use in atom)
 
 Install portaudio19-dev
 - `$ sudo apt install portaudio19-dev`
+
+Fix PS3 controller for RPCS3 ([original info](https://wiki.rpcs3.net/index.php?title=Help:Controller_Configuration))
+- `$ sudo nano /etc/udev/rules.d/99-ds3-controllers.rules`
+	- Paste in these contents:
+	```
+	# DualShock 3 over USB
+	KERNEL=="hidraw", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0268", MODE="0666"
+
+	# DualShock 3 over Bluetooth
+	KERNEL=="hidraw*", KERNELS=="*054C:0268*", MODE="0666"
+	```
+- `$ sudo udevadm control --reload-rules`
+- Reconnect/replug your controller (if this fails to work, reboot)
