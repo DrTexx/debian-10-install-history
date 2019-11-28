@@ -631,10 +631,13 @@ Install RPCS3 as AppImage + get source
 	- Download latest AppImage from [here](https://rpcs3.net/download)
 	- Place the AppImage in `~/Applications/AppImages` (make sure it's executable)
 	- `$ sudo ln -s /home/denver/Applications/AppImages/rpcs3-v0.0.7-9177-2290c389_linux64.AppImage /usr/local/bin/rpcs3`
-- Link .desktop file
+- Clone the repo for desktop assets
 	- `$ cd ~/github`
 	- `$ git clone git@github.com:RPCS3/rpcs3.git`
+- Link .desktop file
 	- `$ ln -s home/denver/github/rpcs3/rpcs3/rpcs3.desktop /home/denver/.local/share/applications/rpcs3.desktop`
+- Link the icon file
+	- `$ ln -s /home/denver/github/rpcs3/rpcs3/rpcs3.svg /home/denver/.icons/rpcs3.svg`
 
 Fix PS3 controller for RPCS3 ([original info](https://wiki.rpcs3.net/index.php?title=Help:Controller_Configuration))
 - `$ sudo nano /etc/udev/rules.d/99-ds3-controllers.rules`
