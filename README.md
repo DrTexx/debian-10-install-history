@@ -2,7 +2,10 @@
 ## General tips and commands
 ### Bash
 #### View command history
-`$ ~/.bash_history (inspect contents)`
+`$ ~/.bash_history` (inspect contents)
+### Files
+#### Print list of file/directories sorted by filesize/s
+`$ du -h --max-depth=1 | sort -hr`
 ### Gpg
 #### Display generated keys and show their UIDs
 `$ gpg --list-secret-keys --keyid-format=long`
