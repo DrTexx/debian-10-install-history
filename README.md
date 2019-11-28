@@ -596,6 +596,16 @@ Install black (for use in atom)
 Install portaudio19-dev
 - `$ sudo apt install portaudio19-dev`
 
+Install RPCS3 as AppImage + get source
+- Download/*install* AppImage
+	- Download latest AppImage from [here](https://rpcs3.net/download)
+	- Place the AppImage in `~/Applications/AppImages` (make sure it's executable)
+	- `$ sudo ln -s /home/denver/Applications/AppImages/rpcs3-v0.0.7-9177-2290c389_linux64.AppImage /usr/local/bin/rpcs3`
+- Link .desktop file
+	- `$ cd ~/github`
+	- `$ git clone git@github.com:RPCS3/rpcs3.git`
+	- `$ ln -s home/denver/github/rpcs3/rpcs3/rpcs3.desktop /home/denver/.local/share/applications/rpcs3.desktop`
+
 Fix PS3 controller for RPCS3 ([original info](https://wiki.rpcs3.net/index.php?title=Help:Controller_Configuration))
 - `$ sudo nano /etc/udev/rules.d/99-ds3-controllers.rules`
 	- Paste in these contents:
