@@ -395,8 +395,32 @@ Install Cura 4.3.0 as AppImage
 - Put the AppImage in ~/Applications/AppImages
 - Make it executable (from CLI, in directory, do `$ chmod +x Ultimaker_Cura-4.3.0.AppImage`)
 - Double-click that bad boy to launch.
+- Create a .desktop file for it
+	- `$ nano ~/.local/share/Applications/cura4.3.0.desktop`
+	- Place the following contents into it (modified version of the one on github):
+	```.desktop
+	[Desktop Entry]
+	Name=Cura 4.3.0
+	Name[de]=Ultimaker Cura
+	Name[nl]=Ultimaker Cura
+	GenericName=3D Printing Software
+	GenericName[de]=3D-Druck-Software
+	GenericName[nl]=3D-printsoftware
+	Comment=Cura converts 3D models into paths for a 3D printer. It prepares your print for maximum accuracy, minimum printing time and good reliability with many extra features that make your print come out great.
+	Comment[de]=Cura wandelt 3D-Modelle in Pfade für einen 3D-Drucker um. Es bereitet Ihren Druck für maximale Genauigkeit, minimale Druckzeit und guter Zuverlässigkeit mit vielen zusätzlichen Funktionen vor, damit Ihr Druck großartig wird.
+	Comment[nl]=Cura converteert 3D-modellen naar paden voor een 3D printer. Het bereidt je print voor om zeer precies, snel en betrouwbaar te kunnen printen, met veel extra functionaliteit om je print er goed uit te laten komen.
+	Exec=/home/denver/Applications/AppImages/Ultimaker_Cura-4.3.0.AppImage %F
+	TryExec=/home/denver/Applications/AppImages/Ultimaker_Cura-4.3.0.AppImage
+	Icon=/home/denver/Applications/AppImages/icons/cura-128.png
+	Terminal=false
+	Type=Application
+	MimeType=model/stl;application/vnd.ms-3mfdocument;application/prs.wavefront-obj;image/bmp;image/gif;image/jpeg;image/png;text/x-gcode;application/x-amf;application/x-ply;application/x-ctm;model/vnd.collada+xml;model/gltf-binary;model/gltf+json;model/vnd.collada+xml+zip;
+	Categories=Graphics;
+	Keywords=3D;Printing;Slicer;
+	StartupWMClass=cura.real
+	```
 
-Install RPCS3 as AppImage
+Install RPCS3 as AppImage (aka. rpcs3)
 - ***add instructions***
 - Put in ~/Applications/AppImages
 - Make it executable
