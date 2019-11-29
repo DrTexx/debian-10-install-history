@@ -651,3 +651,6 @@ Fix PS3 controller for RPCS3 ([original info](https://wiki.rpcs3.net/index.php?t
 	```
 - `$ sudo udevadm control --reload-rules`
 - Reconnect/replug your controller (if this fails to work, reboot)
+
+Install KiCad via Flatpak
+- `$ flatpak install flathub org.kicad_pcb.KiCad`
