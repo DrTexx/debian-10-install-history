@@ -654,3 +654,7 @@ Fix PS3 controller for RPCS3 ([original info](https://wiki.rpcs3.net/index.php?t
 
 Install KiCad via Flatpak
 - `$ flatpak install flathub org.kicad_pcb.KiCad`
+
+Add volux .desktop files
+- `$ ln -s /home/denver/github/volux/volux_launch.desktop ~/.local/share/applications/volux_launch.desktop`
+- `$ ln -s /home/denver/github/volux/volux_launch_lightshow.desktop ~/.local/share/applications/volux_launch_lightshow.desktop`
