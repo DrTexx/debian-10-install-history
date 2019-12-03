@@ -658,3 +658,6 @@ Install KiCad via Flatpak
 Add volux .desktop files
 - `$ ln -s /home/denver/github/volux/volux_launch.desktop ~/.local/share/applications/volux_launch.desktop`
 - `$ ln -s /home/denver/github/volux/volux_launch_lightshow.desktop ~/.local/share/applications/volux_launch_lightshow.desktop`
+
+Install kdenlive for video editting (RIP IH Discord)
+- `$ sudo apt install kdenlive`
