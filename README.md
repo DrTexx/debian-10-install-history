@@ -661,3 +661,15 @@ Add volux .desktop files
 
 Install kdenlive for video editting (RIP IH Discord)
 - `$ sudo apt install kdenlive`
+
+Install tilda (drop-down terminal alternative)
+
+```
+sudo apt install tilda
+```
+
+Install atom packages
+
+```
+apm install tidy-markdown
+```
