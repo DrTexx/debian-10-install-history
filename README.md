@@ -1,5 +1,7 @@
 # Debian 10 Install Steps and History
 ## General tips and commands
+### System logs
+`$ sudo dmesg`
 ### Bash
 #### View command history
 `$ ~/.bash_history` (inspect contents)
