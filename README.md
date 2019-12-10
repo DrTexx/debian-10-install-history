@@ -675,3 +675,21 @@ Install atom packages
 ```
 apm install tidy-markdown
 ```
+
+Install NVM (node version manager)
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+```
+
+-   reopen terminal
+
+```
+nvm install 12.8.1
+```
+
+Install atom packages
+
+```
+apm install fast-eslint
+```
