@@ -705,5 +705,11 @@ Install Teamviewer (adds custom repo during install)
 Install atom packages
 
 ```
-apm install rainbow-csv
+apm install rainbow-csv bracket-colorizer tablr
+```
+
+Install sqlitebrowser
+
+```
+sudo apt install sqlitebrowser
 ```
