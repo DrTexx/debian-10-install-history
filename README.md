@@ -740,3 +740,9 @@ I JUST WANT STEAM VR TO NOT CRASH 49/50 TIMES I LAUNCH IT
 sudo apt remove nvidia-driver
 sudo apt autoremove
 ```
+
+Install unstable Nvidia driver
+
+```
+/etc/init.d/gdm3 stop
+```
