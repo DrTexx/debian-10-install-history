@@ -706,6 +706,7 @@ Install atom packages
 
 ```
 apm install rainbow-csv bracket-colorizer tablr
+apm install ide-python
 ```
 
 Install sqlitebrowser
