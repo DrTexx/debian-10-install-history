@@ -731,5 +731,12 @@ Install gTile gnome extension
 Install mesa-vulkan-drivers in attempts to fix VR
 
 ```
-sudo apt install mesa-vulkan-drivers
+sudo apt install mesa-vulkan-drivers libvulkan1 libvulkan1:i386
+```
+
+I JUST WANT STEAM VR TO NOT CRASH 49/50 TIMES I LAUNCH IT
+
+```
+sudo apt remove nvidia-driver
+sudo apt autoremove
 ```
