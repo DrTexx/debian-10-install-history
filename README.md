@@ -694,4 +694,11 @@ Install atom packages
 apm install fast-eslint
 apm install emmet
 ```
+
+Install Teamviewer (adds custom repo during install)
+
+- Download the .deb from [here](sudo apt install teamviewer_15.0.8397_amd64.deb)
+- Create ~/Applications/packages_deb (`touch ~/Applications/packages_deb`)
+- Move .deb file to ~/Applications/packages_deb
+- `sudo apt install ~/Applications/packages_deb/teamviewer_15.0.8397_amd64.deb` (don't worry, it will add an entry in /etc/apt/sources.list.d/teamviewer.list)
 ```
