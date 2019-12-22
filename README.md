@@ -706,7 +706,6 @@ Install atom packages
 
 ```
 apm install rainbow-csv bracket-colorizer tablr
-apm install ide-python
 ```
 
 Install sqlitebrowser
@@ -714,3 +713,17 @@ Install sqlitebrowser
 ```
 sudo apt install sqlitebrowser
 ```
+
+Install ide-python for atom
+
+```
+apm install ide-python
+python3 -m venv python-language-server
+source python-language-server/bin/activate
+pip install 'python-language-server[all]'
+sudo ln -s /home/denver/Applications/python-language-server/bin/pyls /usr/local/bin/pyls
+```
+
+-   Lastly in the settings for the ide-python atom package, change the python executable path to be `/home/denver/Applications/python-language-server/bin/python3`
+
+Install gTile gnome extension
