@@ -692,5 +692,6 @@ Install atom packages
 
 ```
 apm install fast-eslint
-apm install linter-htmllint
+apm install emmet
+```
 ```
