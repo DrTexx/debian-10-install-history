@@ -727,3 +727,9 @@ sudo ln -s /home/denver/Applications/python-language-server/bin/pyls /usr/local/
 -   Lastly in the settings for the ide-python atom package, change the python executable path to be `/home/denver/Applications/python-language-server/bin/python3`
 
 Install gTile gnome extension
+
+Install mesa-vulkan-drivers in attempts to fix VR
+
+```
+sudo apt install mesa-vulkan-drivers
+```
