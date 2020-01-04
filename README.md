@@ -751,3 +751,186 @@ Install unstable Nvidia driver
 ```
 /etc/init.d/gdm3 stop
 ```
+
+-   ***(remaining instructions missing!)***
+
+Enable h264_nvenc encoding with ffmpeg ***(WARNING, FRUITLESS)***
+
+-   install nv-codec-headers
+```
+git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+cd nv-codec-headers && sudo make install && cd -
+```
+
+-   clone ffmpeg source
+```
+cd ~/Downloads
+git clone https://git.ffmpeg.org/ffmpeg.git
+```
+
+<!-- -   Install CUDA toolkit (nevermind)
+```
+sudo apt install nvidia-cuda-toolkit
+sudo apt remove nvidia-cuda-toolkit
+``` -->
+
+<!-- -   install CUDA with docker ([original instructions](https://github.com/NVIDIA/nvidia-docker))
+```
+sudo docker pull nvidia/cuda
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+sudo apt update
+sudo apt install nvidia-container-toolkit
+sudo systemctl restart docker
+sudo docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
+``` -->
+
+-   Uninstall manually installed nvidia driver (using Windows for VR now anyway)
+
+	-   ensure this stuff is uninstalled
+
+		```
+		sudo apt remove nvidia-driver nvidia-cuda-toolkit
+		```
+
+	-   uninstall manually installed driver (use same file you downloaded to install it, should still be in ~/Downloads)
+
+		```
+		sudo bash NVIDIA-Linux-x86_64-440.44.run --uninstall
+		```
+
+-   Install stable nvidia driver
+
+	-   if you want to double-check it's nvidia-driver you'll need
+		```
+		sudo apt install nvidia-detect
+		nvidia-detect
+		```
+
+	-   install stable driver
+		```
+		sudo apt install nvidia-driver
+		```
+
+	-   reboot
+
+-   Install CUDA toolkit
+
+	```
+	sudo apt install nvidia-cuda-toolkit
+	```
+
+-   compile ffmpeg with special arguments
+
+	-   enter the root of the cloned repo
+	```
+	cd ~/Downloads/ffmpeg
+	```
+
+  -   install requirements
+	```
+	sudo apt-get update -qq && sudo apt-get -y install \
+	  autoconf \
+	  automake \
+	  build-essential \
+	  cmake \
+	  git-core \
+	  libass-dev \
+	  libfreetype6-dev \
+	  libsdl2-dev \
+	  libtool \
+	  libva-dev \
+	  libvdpau-dev \
+	  libvorbis-dev \
+	  libxcb1-dev \
+	  libxcb-shm0-dev \
+	  libxcb-xfixes0-dev \
+	  pkg-config \
+	  texinfo \
+	  wget \
+	  zlib1g-dev
+	```
+
+	-   make some directories
+	```
+	mkdir -p ~/ffmpeg_sources ~/bin
+	```
+
+	- install NASM
+	```
+	sudo apt-get install nasm
+	```
+
+	- install Yasm
+	```
+	sudo apt-get install yasm
+	```
+
+	- install libx264-dev
+	```
+	sudo apt-get install libx264-dev
+	```
+
+	- install libx265-dev
+	```
+	sudo apt-get install libx265-dev libnuma-dev
+	```
+
+	- install libvpx-dev
+	```
+	sudo apt-get install libvpx-dev
+	```
+
+	- install libfdk-aac-dev
+	```
+	sudo apt-get install libfdk-aac-dev
+	```
+
+	- install libmp3lame-dev
+	```
+	sudo apt-get install libmp3lame-dev
+	```
+
+	- install libopus-dev
+	```
+	sudo apt-get install libopus-dev
+	```
+
+	- compile ffmpeg with special flags
+	```
+	cd ~/ffmpeg_sources && \
+	wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && \
+	tar xjvf ffmpeg-snapshot.tar.bz2 && \
+	cd ffmpeg && \
+	PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure \
+	  --prefix="$HOME/ffmpeg_build" \
+	  --pkg-config-flags="--static" \
+	  --extra-cflags="-I$HOME/ffmpeg_build/include" \
+	  --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
+	  --extra-libs="-lpthread -lm" \
+	  --bindir="$HOME/bin" \
+	  --enable-gpl \
+	  --enable-libass \
+	  --enable-libfdk-aac \
+	  --enable-libfreetype \
+	  --enable-libmp3lame \
+	  --enable-libopus \
+	  --enable-libvorbis \
+	  --enable-libvpx \
+	  --enable-libx264 \
+	  --enable-libx265 \
+	  --enable-cuda-sdk \
+	  --enable-cuvid \
+	  --enable-nvenc \
+	  --enable-nonfree \
+	  --enable-libnpp \
+	  --extra-cflags=-I/usr/local/cuda/include \
+	  --extra-ldflags=-L/usr/local/cuda/lib64 \
+	  --enable-nonfree && \
+	PATH="$HOME/bin:$PATH" make -j 10 && \
+	make install && \
+	hash -r
+	```
+
+-   ***AND AFTER ALL THAT IT DOESN'T WORK, AWESOME.*** (requires version >435 to use nvenc but can't install nvidia-cuda-toolkit unless I'm using driver version 418, would install manually however nvidia doesn't officially support Debian for cuda-toolkit and thus there's no package to manually install)
