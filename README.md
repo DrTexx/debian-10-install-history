@@ -5,6 +5,11 @@
 ### Bash
 #### View command history
 `$ ~/.bash_history` (inspect contents)
+### Aptitude
+#### Kill any install processes to remove dpkg lock
+`sudo killall dpkg`
+#### Fix package issues (may need to remove dpkg lock first)
+`sudo dpkg --configure -a`
 ### Files
 #### Print list of file/directories sorted by filesize/s
 `$ du -h --max-depth=1 | sort -hr`
