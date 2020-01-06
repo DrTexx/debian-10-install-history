@@ -934,3 +934,11 @@ sudo docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
 	```
 
 -   ***AND AFTER ALL THAT IT DOESN'T WORK, AWESOME.*** (requires version >435 to use nvenc but can't install nvidia-cuda-toolkit unless I'm using driver version 418, would install manually however nvidia doesn't officially support Debian for cuda-toolkit and thus there's no package to manually install)
+
+Install VSCodium (VS Code without telemetry)
+
+```
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
+echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | sudo tee --append /etc/apt/sources.list.d/vscodium.list
+sudo apt update && sudo apt install codium
+```
