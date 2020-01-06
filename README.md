@@ -962,3 +962,8 @@ sudo apt install mongodb-org
 ```
 sudo service mongod start
 ```
+
+Install tmux
+```
+sudo apt install tmux
+```
