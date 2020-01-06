@@ -948,3 +948,17 @@ Uninstall VS Code
 ```
 sudo snap remove code
 ```
+
+Install mongodb server ([steps](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/))
+
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt update
+sudo apt install mongodb-org
+```
+
+-   start mongodb server
+```
+sudo service mongod start
+```
