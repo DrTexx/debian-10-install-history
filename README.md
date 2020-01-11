@@ -979,6 +979,5 @@ python3 -m venv ~/Applications/pipenv
 source ~/Applications/pipenv/bin/activate
 pip install pipenv
 deactivate
-ln -s
 sudo ln -s ~/Applications/pipenv/bin/pipenv /usr/local/bin/pipenv
 ```
