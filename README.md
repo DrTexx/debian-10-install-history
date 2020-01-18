@@ -981,3 +981,8 @@ pip install pipenv
 deactivate
 sudo ln -s ~/Applications/pipenv/bin/pipenv /usr/local/bin/pipenv
 ```
+
+Install pyaudio
+```
+sudo apt install python3-pyaudio
+```
