@@ -986,3 +986,17 @@ Install pyaudio
 ```
 sudo apt install python3-pyaudio
 ```
+
+Install node-red via snap (actually not using yet)
+
+- Install
+
+	```
+	snap install node-red
+	```
+
+- Firewall rule
+
+	```
+	sudo ufw allow from 127.0.0.1 port 1880 to 127.0.0.1 port 1880
+	```
