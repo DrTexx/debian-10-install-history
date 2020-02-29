@@ -1000,3 +1000,9 @@ Install node-red via snap (actually not using yet)
 	```
 	sudo ufw allow from 127.0.0.1 port 1880 to 127.0.0.1 port 1880
 	```
+
+Install gnome-boxes
+
+```
+sudo apt install gnome-boxes
+```
