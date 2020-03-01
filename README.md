@@ -1018,3 +1018,9 @@ Install GNU Plot
 ```
 sudo apt install gnuplot
 ```
+
+Install hyperfine via Cargo (hyperfine is used for benchmarking execution times)
+
+```
+cargo install hyperfine
+```
