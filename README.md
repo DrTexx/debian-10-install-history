@@ -1006,3 +1006,9 @@ Install gnome-boxes
 ```
 sudo apt install gnome-boxes
 ```
+
+Install rust via script
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
