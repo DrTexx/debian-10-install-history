@@ -1024,3 +1024,6 @@ Install hyperfine via Cargo (hyperfine is used for benchmarking execution times)
 ```
 cargo install hyperfine
 ```
+
+Installed apt upgrades
+
