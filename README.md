@@ -1027,3 +1027,9 @@ cargo install hyperfine
 
 Installed apt upgrades
 
+Uninstall metasploit
+
+```
+sudo apt remove metasploit-framework
+```
+
