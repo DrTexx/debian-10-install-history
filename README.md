@@ -1033,3 +1033,7 @@ Uninstall metasploit
 sudo apt remove metasploit-framework
 ```
 
+Download Slic3r as AppImage
+
+- move AppImage into ~/Applications/
+
