@@ -1037,3 +1037,22 @@ Download Slic3r as AppImage
 
 - move AppImage into ~/Applications/
 
+Uninstall lutris via apt (original repo is dead)
+
+```bash
+sudo apt remove lutris
+sudo rm /etc/apt/sources.list.d/lutris.list /etc/apt/sources.list.d/lutris.list.save
+```
+
+Errors:
+> Err:19 http://download.opensuse.org/repositories/home:/strycore/Debian_9.0 ./ Release> &nbsp;  404  Not Found [IP: 195.135.221.134 80]
+
+> E: The repository 'http://download.opensuse.org/repositories/home:/strycore/Debian_9.0 ./ Release' no longer has a Release file.
+
+Remove any lutris reminants
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+```
