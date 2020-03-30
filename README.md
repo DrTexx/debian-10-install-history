@@ -1056,3 +1056,18 @@ sudo apt update
 sudo apt upgrade
 sudo apt autoremove
 ```
+
+Fix apt note during upgrading (unsupported arch for mongodb)
+
+```bash
+sudo nano /etc/apt/sources.list.d/mongodb-org-4.2.list
+```
+
+- change this line
+	> `deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main`
+- to this (add architecture as _[arch=amd64]_)
+	> `deb [arch=amd64] http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main`
+
+```bash
+sudo apt update
+```
