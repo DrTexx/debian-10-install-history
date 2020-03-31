@@ -1071,3 +1071,74 @@ sudo nano /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```bash
 sudo apt update
 ```
+
+Fix firefox _STILL_ not being updated
+
+- despite trying to `sudo apt update`, `sudo apt upgrade`, `sudo apt full-upgrade` and `sudo apt dist-upgrade`'ing, firefox still won't update from 60.8.0esr-1~deb10u1 to 68.6.0esr-1~deb10u1
+
+- will try marking it manually installed
+
+	```bash
+	sudo apt install firefox-esr
+	```
+
+- not luck
+
+- **backed up tabs and stuff using firefox sync**
+
+- going to uninstall and reinstall
+
+	```bash
+	sudo apt remove firefox-esr
+	```
+
+- wtf is going on, `sudo apt info firefox-esr` says 60.8.0esr-1~deb10u1 is latest, despite an `sudo apt update`??
+
+- rebooting
+
+- what the actual fuck
+
+	> ```
+	> denver@prion-debian10:~$ sudo apt install firefox-esr
+	> Reading package lists... Done
+	> Building dependency tree       
+	> Reading state information... Done
+	> Suggested packages:
+	>   fonts-stix | otf-stix fonts-lmodern
+	> E: Can't find a source to download version '60.8.0esr-1~deb10u1' of 'firefox-esr:amd64'
+	> ```
+
+- holy crap it was pinned by apt-listbugs! (seen in /etc/apt/preferences.d/apt-listbugs)
+
+- remove the following content from `/etc/apt/preferences.d/apt-listbugs` (it is the entire content in this instance):
+
+	```
+	Explanation: Pinned by apt-listbugs at 2019-09-07 10:50:11 +1000
+	Explanation:   #933757: Firefox-esr FTBFS "failed to open: /sbuild-nonexistent/.cargo/.package-cache"
+	Package: firefox-esr
+	Pin: version 60.8.0esr-1~deb10u1
+	Pin-Priority: 30000
+	```
+
+- check it worked
+
+	```
+	sudo apt update
+	sudo apt info firefox-esr
+	```
+
+- oh thank god it did
+
+- update stuff and try again
+
+	```
+	sudo apt update
+	sudo apt install firefox-esr
+	```
+
+- oh it seems to have worked, thank god for that (it even restored my tabs!)
+
+- reboot just to be sure everything is working as intended
+
+- looks good, think it's all fixed now
+
