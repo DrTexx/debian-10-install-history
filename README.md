@@ -1142,3 +1142,23 @@ Fix firefox _STILL_ not being updated
 
 - looks good, think it's all fixed now
 
+Do a sudo apt upgrade (2020/04/21-11:25) (24h time)
+
+```
+denver@prion-debian10:~$ sudo apt list --upgradable
+Listing... Done
+adoptopenjdk-8-hotspot/buster 8u252-b09-2 amd64 [upgradable from: 8u242-b08-2]
+codium/unknown 1.44.2-1587206561 amd64 [upgradable from: 1.43.2-1585083818]
+git-man/stable,stable 1:2.20.1-2+deb10u3 all [upgradable from: 1:2.20.1-2+deb10u2]
+git/stable 1:2.20.1-2+deb10u3 amd64 [upgradable from: 1:2.20.1-2+deb10u2]
+keybase/unknown 5.4.0-20200416162659.e81aee5eaf amd64 [upgradable from: 5.3.1-20200320154633.3e235215b3]
+mongodb-org-mongos/buster 4.2.6 amd64 [upgradable from: 4.2.5]
+mongodb-org-server/buster 4.2.6 amd64 [upgradable from: 4.2.5]
+mongodb-org-shell/buster 4.2.6 amd64 [upgradable from: 4.2.5]
+mongodb-org-tools/buster 4.2.6 amd64 [upgradable from: 4.2.5]
+mongodb-org/buster 4.2.6 amd64 [upgradable from: 4.2.5]
+virtualbox-6.0/unknown 6.0.20-137117~Debian~buster amd64 [upgradable from: 6.0.18-136238~Debian~buster]
+```
+
+- `sudo apt update`
+- `sudo apt upgrade`
