@@ -1162,3 +1162,9 @@ virtualbox-6.0/unknown 6.0.20-137117~Debian~buster amd64 [upgradable from: 6.0.1
 
 - `sudo apt update`
 - `sudo apt upgrade`
+
+Install virt-manager
+
+```
+sudo apt install virt-manager
+```
