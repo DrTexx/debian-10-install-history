@@ -1168,3 +1168,9 @@ Install virt-manager
 ```
 sudo apt install virt-manager
 ```
+
+Install Cataclysm: Dark Days Ahead via snap store
+
+```
+snap install cataclysm
+```
