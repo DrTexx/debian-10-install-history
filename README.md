@@ -328,11 +328,11 @@ Install Dropbox (later uninstalled, see further down for alternative install met
 - `$ sudo apt install python-gpg` (optional package for verification) ***dropbox actually uses python-gpgme, however it is depreciated in Debian 10. This isn't a necessary install***
 - Run Dropbox
 
-Install keybase
-- `$ cd ~/Downloads/`
+Install keybase (removed since, do not install)
+<!-- - `$ cd ~/Downloads/`
 - `$ curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb`
 - `$ sudo apt install ./keybase_amd64.deb` (note: this will add the keybase repository automatically)
-- `$ run_keybase`
+- `$ run_keybase` -->
 
 Migrate to official VSCode Snap
 - `$ snap remove vscode`
@@ -1174,3 +1174,52 @@ Install Cataclysm: Dark Days Ahead via snap store
 ```
 snap install cataclysm
 ```
+
+Uninstall keybase (heavily based on [these instructions](https://github.com/keybase/client/issues/7897#issuecomment-612992685))
+
+- close keybase window, don't log out or exit keybase
+- disconnect network
+- kill all processes related to 'keybase' or 'kbfs'
+- _"First, as described above"_
+  - _"uninstall"_
+	```
+	sudo apt purge keybase
+	sudo apt autoclean
+	```
+  - _"Remove user data at the risk of losing unrecoverable keys"_
+  	```
+  	rm -rf ~/.local/share/keybase ~/.config/keybase
+  	```
+  - _"Delete empty directory in root"_
+  	```
+  	sudo fusermount -u /keybase # I needed to do this first
+  	sudo rm -r /keybase
+  	```
+- _"Then manually remove from package management"_
+  - _"Remove from apt list"_
+	```
+	sudo rm /var/lib/apt/lists/prerelease.keybase*
+	sudo rm /etc/apt/sources.list.d/keybase.list
+	sudo rm /etc/apt/sources.list.d/keybase.list.save # step I did
+	```
+  - _"Untrust the key"_
+	```
+	apt-key list  # To get the following key
+	sudo apt-key del 656D16C7
+	```
+- _"Finally, just to be sure..."_
+  - reconnect network briefly for next step
+	```
+	sudo apt update
+	```
+  - disconnect network again
+  - finish off with this stuff
+	```
+	sudo apt autoremove
+	sudo apt autoclean
+	sudo apt clean
+	sudo dpkg --configure -a
+	sudo apt -f install # I did this because I don't like apt/apt-get
+	sudo apt-get -f install
+	```
+  - reboot
