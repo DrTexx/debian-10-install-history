@@ -1223,3 +1223,10 @@ Uninstall keybase (heavily based on [these instructions](https://github.com/keyb
 	sudo apt-get -f install
 	```
   - reboot
+
+Update apt packages (19/05/2020)
+
+```
+sudo apt update
+sudo apt upgrade
+```
