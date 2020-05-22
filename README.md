@@ -10,6 +10,8 @@
 `sudo killall dpkg`
 #### Fix package issues (may need to remove dpkg lock first)
 `sudo dpkg --configure -a`
+#### Find missing package/s based on missing files
+`apt-file search [path_segment/s]` (example: `apt-file search bin/designer`)
 ### Files
 #### Print list of file/directories sorted by filesize/s
 `$ du -h --max-depth=1 | sort -hr`
