@@ -1232,3 +1232,10 @@ Update apt packages (19/05/2020)
 sudo apt update
 sudo apt upgrade
 ```
+
+Disable middle-click paste in Firefox (was annoying in figma)
+
+- navigate to about:config
+- set the following to false
+  - middlemouse.contentLoadURL (disables behaviour outside text-boxes) (was already false)
+  - middlemouse.paste (text-boxes only) (was set true before change)
