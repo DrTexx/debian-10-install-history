@@ -1239,3 +1239,12 @@ Disable middle-click paste in Firefox (was annoying in figma)
 - set the following to false
   - middlemouse.contentLoadURL (disables behaviour outside text-boxes) (was already false)
   - middlemouse.paste (text-boxes only) (was set true before change)
+
+Update apt packages (23/05/2020)
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove # no changes
+sudo apt autoclean # no changes
+```
