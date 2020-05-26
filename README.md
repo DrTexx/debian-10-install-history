@@ -1248,3 +1248,9 @@ sudo apt upgrade
 sudo apt autoremove # no changes
 sudo apt autoclean # no changes
 ```
+
+Update pcsx2 flatpak
+
+```bash
+flatpak update net.pcsx2.PCSX2
+```
