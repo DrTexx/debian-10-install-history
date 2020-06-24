@@ -1254,3 +1254,12 @@ Update pcsx2 flatpak
 ```bash
 flatpak update net.pcsx2.PCSX2
 ```
+
+Update apt packages (24/06/2020)
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove # no changes
+sudo apt autoclean # no changes
+```
