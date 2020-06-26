@@ -1263,3 +1263,12 @@ sudo apt upgrade
 sudo apt autoremove # no changes
 sudo apt autoclean # no changes
 ```
+
+Update flatpaks (26/06/2020)
+
+```bash
+flatpak update com.spotify.Client
+flatpak update tv.kodi.Kodi
+flatpak update org.kicad_pcb.KiCad
+flatpak uninstall --unused
+```
