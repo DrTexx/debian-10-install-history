@@ -1272,3 +1272,23 @@ flatpak update tv.kodi.Kodi
 flatpak update org.kicad_pcb.KiCad
 flatpak uninstall --unused
 ```
+
+Install GNU IceCat
+
+- download icecat logo from [here](https://www.gnu.org/software/gnuzilla/icecat-128.png)
+- `mkdir ~/Applications/.icons/`
+- copy `icecat-128.png` to `~/Applications/.icons/`
+- `ln -s /home/denver/Applications/.icons/icecat-128.png /home/denver/.icons/icecat-128.png`
+- download icecat from GNU website
+- extract to `~/Applications/icecat`
+- create `~/.local/share/applications/icecat.desktop` with the following contents
+  - ```toml
+	[Desktop Entry]
+	Type=Application
+	Name=IceCat        
+	GenericName=IceCat
+	Comment=GNU IceCat browser                        
+	Exec=/home/denver/applications/icecat/icecat 
+	Icon=icecat-128.png
+	#StartupWMClass=processing-app-Base
+	```
