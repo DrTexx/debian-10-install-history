@@ -1292,3 +1292,7 @@ Install GNU IceCat
 	Icon=icecat-128.png
 	#StartupWMClass=processing-app-Base
 	```
+
+Uninstall TeamViewer
+
+- `sudo apt purge teamviewer`
