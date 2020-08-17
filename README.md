@@ -1296,3 +1296,14 @@ Install GNU IceCat
 Uninstall TeamViewer
 
 - `sudo apt purge teamviewer`
+
+Update apt packages (24/06/2020)
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove # removed: qml-module-qtquick-dialogs qml-module-qtquick-privatewidgets
+sudo apt autoclean # no changes
+```
+
+- then rebooted
