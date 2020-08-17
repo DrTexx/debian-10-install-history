@@ -1295,7 +1295,9 @@ Install GNU IceCat
 
 Uninstall TeamViewer
 
-- `sudo apt purge teamviewer`
+```bash
+sudo apt purge teamviewer
+```
 
 Update apt packages (24/06/2020)
 
