@@ -1309,3 +1309,9 @@ sudo apt autoclean # no changes
 ```
 
 - then rebooted
+
+Install syncthing
+
+```bash
+sudo apt install syncthing
+```
