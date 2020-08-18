@@ -1315,3 +1315,9 @@ Install syncthing
 ```bash
 sudo apt install syncthing
 ```
+
+Allow syncthing through ufw
+
+```bash
+sudo ufw allow syncthing
+```
