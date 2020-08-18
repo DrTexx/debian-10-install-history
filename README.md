@@ -1321,3 +1321,27 @@ Allow syncthing through ufw
 ```bash
 sudo ufw allow syncthing
 ```
+
+Clean up left-overs from lutris
+
+```bash
+rm -rf /home/denver/.cache/lutris
+rm -rf /home/denver/.config/lutris
+rm -rf /home/denver/lutris
+rm -rf /home/denver/.local/share/lutris
+rm -rf /home/denver/.local/share/applications/wine-extension-chm.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-gif.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-hlp.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-htm.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-ini.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-jfif.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-jpe.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-msp.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-pdf.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-png.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-rtf.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-txt.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-url.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-vbs.desktop
+rm -rf /home/denver/.local/share/applications/wine-extension-xml.desktop
+```
