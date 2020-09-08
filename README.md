@@ -1345,3 +1345,16 @@ rm -rf /home/denver/.local/share/applications/wine-extension-url.desktop
 rm -rf /home/denver/.local/share/applications/wine-extension-vbs.desktop
 rm -rf /home/denver/.local/share/applications/wine-extension-xml.desktop
 ```
+
+Try integrating Volux with systemd
+
+```bash
+sudo rm -r /usr/local/bin/volux
+sudo cp /home/denver/github/volux/voluxtilevis.service /etc/systemd/user
+sudo cp /home/denver/github/volux/voluxbar.service /etc/systemd/user
+sudo cp /home/denver/github/volux/dist/voluxtilevis /usr/local/bin
+sudo cp /home/denver/github/volux/dist/voluxbar /usr/local/bin
+systemctl --user disable voluxtilevis
+systemctl --user enable voluxbar
+```
+
