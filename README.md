@@ -1358,3 +1358,8 @@ systemctl --user disable voluxtilevis
 systemctl --user enable voluxbar
 ```
 
+Install Discord as flatpak (friend using Debian claimed they don't have memory leak issues I've been experiencing)
+
+```bash
+flatpak install discord
+```
