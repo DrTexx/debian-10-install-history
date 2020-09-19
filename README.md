@@ -1363,3 +1363,45 @@ Install Discord as flatpak (friend using Debian claimed they don't have memory l
 ```bash
 flatpak install discord
 ```
+
+Install apt-file (view contents of .deb files)
+
+```bash
+sudo apt update
+sudo apt install apt-file
+sudo apt-file update
+```
+
+Install v4l2loopback (create virtual camera inputs)
+
+```bash
+sudo apt install v4l2loopback-dkms
+sudo modprobe v4l2loopback
+```
+
+Install obs-v4l2sink
+
+- Download [obs-v4l2sink.deb](https://github.com/CatxFish/obs-v4l2sink/releases/download/0.1.0/obs-v4l2sink.deb)
+- Put obs-v4l2sink.deb into ~/Applications/PACKAGES/
+
+```bash
+sudo apt install /home/denver/Applications/PACKAGES/obs-v4l2sink.deb
+```
+
+- Didn't work, at least it's not working without a reboot :\
+
+Install obs-studio (snap version)
+
+```bash
+sudo snap install obs-studio
+```
+- [work-around for driver nvidia driver issue](https://github.com/snapcrafters/obs-studio/issues/68#issuecomment-670948068)
+	```bash
+	SOURCE="/usr/lib/x86_64-linux-gnu"
+	DEST="/snap/obs-studio/1124/usr/lib/x86_64-linux-gnu/" # may need to change this\
+	sudo mount --bind $SOURCE/libGL.so.1 $DEST/libGL.so.1
+	sudo mount --bind $SOURCE/libEGL.so.1 $DEST/libEGL.so.1.0.0
+	sudo mount --bind $SOURCE/libGLX.so.0 $DEST/libGLX.so.0
+	sudo mount --bind $SOURCE/nvidia/current/libGLX_nvidia.so.418.152.00 $DEST/libGLX_mesa.so.0 # needed to change numbers on end of first path
+	```
+
