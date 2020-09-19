@@ -1405,3 +1405,10 @@ sudo snap install obs-studio
 	sudo mount --bind $SOURCE/nvidia/current/libGLX_nvidia.so.418.152.00 $DEST/libGLX_mesa.so.0 # needed to change numbers on end of first path
 	```
 
+Allow access to /dev/ttyUSB devices
+
+```bash
+sudo adduser $USER dialout
+```
+
+- reboot
