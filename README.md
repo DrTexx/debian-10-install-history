@@ -1412,3 +1412,9 @@ sudo adduser $USER dialout
 ```
 
 - reboot
+
+Install screen to use REPL on ESP32
+
+```bash
+sudo apt install screen
+```
