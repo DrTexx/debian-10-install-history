@@ -1364,6 +1364,12 @@ Install Discord as flatpak (friend using Debian claimed they don't have memory l
 flatpak install discord
 ```
 
+Uninstall Discord as snap (leave flatpak version)
+
+```bash
+sudo snap remove discord
+```
+
 Install apt-file (view contents of .deb files)
 
 ```bash
