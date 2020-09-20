@@ -1424,3 +1424,11 @@ Install screen to use REPL on ESP32
 ```bash
 sudo apt install screen
 ```
+
+Install PCSX2 as flatpak (leave other installed)
+
+```bash
+flatpak install flathub net.pcsx2.PCSX2
+```
+
+- might still need to create a .desktop file, but might appear after reboot anyway
