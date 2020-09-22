@@ -1432,3 +1432,9 @@ flatpak install flathub net.pcsx2.PCSX2
 ```
 
 - might still need to create a .desktop file, but might appear after reboot anyway
+
+Install kdenlive as flatpak (leave apt version installed for now)
+
+```bash
+flatpak install flathub org.kde.kdenlive
+```
