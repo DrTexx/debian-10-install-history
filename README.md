@@ -1438,3 +1438,9 @@ Install kdenlive as flatpak (leave apt version installed for now)
 ```bash
 flatpak install flathub org.kde.kdenlive
 ```
+
+Update system packages (2020/09/24)
+
+```bash
+sudo apt update
+```
