@@ -1490,3 +1490,12 @@ sudo rm /etc/apt/sources.list.d/virtualbox.list /etc/apt/sources.list.d/virtualb
 ```bash
 sudo apt autoremove
 ```
+
+Resolve apt issue
+
+- Update nvidia-docker signiture (was invalid) and run apt update
+```bash
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+sudo apt update
+```
+
