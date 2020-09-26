@@ -1444,3 +1444,49 @@ Update system packages (2020/09/24)
 ```bash
 sudo apt update
 ```
+
+Uninstall VirtualBox
+
+- Open Virtual Box
+- Navigate through the UI to File > Preferences > Extensions
+- Uninstall any installed extensions (none in this instance)
+- Check you've either backed-up or deleted all virtual machines at "~/VirtualBox VMs/"
+- Check the output of virtualbox-* isn't overzealous
+```bash
+sudo apt list | grep virtualbox-*
+```
+
+- Purge virtualbox packages
+```bash
+sudo apt purge virtualbox-*
+```
+
+- Remove any remaining virtual machines
+```bash
+rm -r "VirtualBox VMs"/
+```
+
+- Clear any remaining configuration files
+```bash
+rm -rf /home/denver/.config/VirtualBox
+```
+
+- Check for any remaining processes/services
+```bash
+sudo ps aux | grep -i "vbox"
+```
+
+- Kill any "ghost" processes that appear to be relevant
+```bash
+sudo pkill VBox*
+```
+
+- Remove VirtualBox repository
+```bash
+sudo rm /etc/apt/sources.list.d/virtualbox.list /etc/apt/sources.list.d/virtualbox.list.save
+```
+
+- Autoremove any unnecessary packages
+```bash
+sudo apt autoremove
+```
