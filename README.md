@@ -1499,3 +1499,9 @@ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 sudo apt update
 ```
 
+Upgrade apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
