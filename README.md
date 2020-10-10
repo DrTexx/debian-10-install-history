@@ -1505,3 +1505,9 @@ Upgrade apt packages
 sudo apt update
 sudo apt upgrade
 ```
+
+Install Blender as Flatpak
+
+```bash
+flatpak install flathub org.blender.Blender
+```
