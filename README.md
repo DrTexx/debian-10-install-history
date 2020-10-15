@@ -1537,3 +1537,15 @@ Install [xpadneo](https://github.com/atar-axis/xpadneo) and pair Xbox One contro
 	```
 	- The <MAC> parameter is optional if the command line already shows the controller name
     - You know that everything works fine when you feel the gamepad rumble ;)
+
+Reinstall Spotify via flatpak (cache is huge and can't clear it from app)
+
+```
+flatpak uninstall com.spotify.Client
+```
+
+- delete any large files/folders where it appears safe to do so under ~/.var/app/com.spotify.Client
+
+```
+flatpak install flathub com.spotify.Client
+```
