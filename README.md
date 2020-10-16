@@ -1549,3 +1549,13 @@ flatpak uninstall com.spotify.Client
 ```bash
 flatpak install flathub com.spotify.Client
 ```
+
+Enable sharing to recieve files over bluetooth (Cancelled)
+- [Debian guide](https://wiki.debian.org/BluetoothUser#GNOME_topics)
+- Settings > Sharing > File Sharing
+  - Add password + enable using password
+  - Enable one or more networks
+- NEVERMIND: it looks like it's completely broken/abandoned on Debian 10
+- Re-disable sharing
+- Just use SyncThing instead
+
