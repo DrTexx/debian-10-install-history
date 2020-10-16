@@ -1559,3 +1559,16 @@ Enable sharing to recieve files over bluetooth (Cancelled)
 - Re-disable sharing
 - Just use SyncThing instead
 
+Install bpytop and alias it over htop
+
+```bash
+cd /opt
+sudo su # DANGER ZONE!!!
+python3 -m venv bpytop
+source bpytop/bin/activate
+pip install bpytop
+deactivate
+exit # Back to (relative) safety
+sudo ln -s /opt/bpytop/bin/bpytop /usr/local/bin/
+echo 'alias htop="bpytop"' >> /home/denver/.bash_aliases
+```
