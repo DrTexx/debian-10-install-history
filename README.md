@@ -1540,12 +1540,12 @@ Install [xpadneo](https://github.com/atar-axis/xpadneo) and pair Xbox One contro
 
 Reinstall Spotify via flatpak (cache is huge and can't clear it from app)
 
-```
+```bash
 flatpak uninstall com.spotify.Client
 ```
 
 - delete any large files/folders where it appears safe to do so under ~/.var/app/com.spotify.Client
 
-```
+```bash
 flatpak install flathub com.spotify.Client
 ```
