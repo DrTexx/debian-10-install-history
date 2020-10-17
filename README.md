@@ -1572,3 +1572,17 @@ exit # Back to (relative) safety
 sudo ln -s /opt/bpytop/bin/bpytop /usr/local/bin/
 echo 'alias htop="bpytop"' >> /home/denver/.bash_aliases
 ```
+
+Add debian backports for latest gamemode release
+
+```bash
+sudo nano /etc/apt/sources.list.d/backports.list
+```
+- add the follwing contents to `backports.list`:
+    ```
+	deb https://deb.debian.org/debian buster-backports main
+	```
+```bash
+sudo apt update
+```
+
