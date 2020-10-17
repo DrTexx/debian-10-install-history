@@ -1634,3 +1634,14 @@ Install gamemode gnome shell extension - **FAILED ATTEMPT**
 - Restart gnome shell
   - Press Alt + F2
   - Type 'r' and press enter
+
+Configure Noita on Steam to use gamemode + GL performance flags
+- Go into Steam
+- Find Noita
+- Right-click, select "Properties..."
+- Go to "General" > "SET LAUNCH OPTIONS..."
+- Add the following: `__GL_THREADED_OPTIMIZATION=1 __GL_SHADER_DISK_CACHE=1 gamemoderun %command%`
+- Press enter
+- Close the window, etc.
+- Launch the game
+- 60 FPS, wooo!
