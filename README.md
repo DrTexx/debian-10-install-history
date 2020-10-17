@@ -1592,3 +1592,45 @@ Install gamemode from debian backports
 sudo apt -t buster-backports install gamemode
 ```
 
+Install gamemode gnome shell extension - **FAILED ATTEMPT**
+
+- Visit https://extensions.gnome.org/extension/1852/gamemode/
+- Download extension
+  - Gnome version = 3.30
+  - Extension version = 3
+- Install extension manually
+    ```bash
+    unzip /home/denver/Downloads/gamemodechristian.kellner.me.v3.shell-extension.zip -d /home/denver/.local/share/gnome-shell/extensions/gamemode@christian.kellner.me/
+    ```
+- Restart gnome shell
+  - Press Alt + F2
+  - Type 'r' and press enter
+- Patch config menu breaking because gnome 3.30 isn't supported (despite the metadata)
+  - Note the following steps are through my own trial-and-error
+  ```bash
+  cp /usr/share/gnome-shell/extensions/alternate-tab@gnome-shell-extensions.gcampax.github.com/convenience.js /home/denver/.local/share/gnome-shell/extensions/gamemode@christian.kellner.me/
+  ```
+  - Edit source of `prefs.js`
+    - Add the following line under `const Me = ExtensionUtils.getCurrentExtension();`
+    ```js
+	const Convenience = Me.imports.convenience; // Added by me
+	```
+	- Replacing each of the following instances like so:
+
+    | Find                                | Replace                          |
+    | ----------------------------------- | -------------------------------- |
+    | `ExtensionUtils.initTranslations()` | `Convenience.initTranslations()` |
+    | `ExtensionUtils.getSettings()`      | `Convenience.getSettings()`      |
+
+  - Open tweak tool
+  - Navigate to extensions > gamemode
+  - Click the cog
+  - Although the extension is still broken, settings menu works now!
+- Remove extension
+  ```bash
+  cd /home/denver/.local/share/gnome-shell/extensions
+  rm -rf gamemode\@christian.kellner.me/
+  ```
+- Restart gnome shell
+  - Press Alt + F2
+  - Type 'r' and press enter
