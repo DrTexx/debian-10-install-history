@@ -1586,3 +1586,9 @@ sudo nano /etc/apt/sources.list.d/backports.list
 sudo apt update
 ```
 
+Install gamemode from debian backports
+
+```bash
+sudo apt -t buster-backports install gamemode
+```
+
