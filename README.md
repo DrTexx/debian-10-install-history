@@ -1645,3 +1645,20 @@ Configure Noita on Steam to use gamemode + GL performance flags
 - Close the window, etc.
 - Launch the game
 - 60 FPS, wooo!
+
+Install [xow](https://github.com/medusalix/xow) for offical Xbox controller dongle support
+- Install dependencies
+  ```bash
+  sudo apt install libusb-1.0-0-dev libusb-1.0-0
+  ```
+- Install xow
+  ```bash
+  cd /home/denver/Applications
+  git clone https://github.com/medusalix/xow
+  cd xow
+  make BUILD=RELEASE
+  sudo make install
+  sudo systemctl enable xow
+  sudo systemctl start xow
+  ```
+- Reboot
