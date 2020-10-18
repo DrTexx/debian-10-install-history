@@ -1662,3 +1662,9 @@ Install [xow](https://github.com/medusalix/xow) for offical Xbox controller dong
   sudo systemctl start xow
   ```
 - Reboot
+
+Install OpenSpades as flatpak
+
+```bash
+flatpak install flathub jp.yvt.OpenSpades
+```
