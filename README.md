@@ -1668,3 +1668,9 @@ Install OpenSpades as flatpak
 ```bash
 flatpak install flathub jp.yvt.OpenSpades
 ```
+
+Install RetroArch as flatpak
+
+```bash
+flatpak install flathub org.libretro.RetroArch
+```
