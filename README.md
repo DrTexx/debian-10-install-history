@@ -1674,3 +1674,9 @@ Install RetroArch as flatpak
 ```bash
 flatpak install flathub org.libretro.RetroArch
 ```
+
+Install Okular as flatpak
+
+```bash
+flatpak install flathub org.kde.okular
+```
