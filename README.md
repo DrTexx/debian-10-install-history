@@ -1680,3 +1680,21 @@ Install Okular as flatpak
 ```bash
 flatpak install flathub org.kde.okular
 ```
+
+Update apt packages
+
+```bash
+sudo apt update
+```
+
+Install FileZilla
+
+```bash
+sudo apt install filezilla
+```
+
+Update tzdata package
+
+```bash
+sudo apt --only-upgrade install tzdata
+```
