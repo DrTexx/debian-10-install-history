@@ -1698,3 +1698,21 @@ Update tzdata package
 ```bash
 sudo apt --only-upgrade install tzdata
 ```
+
+Update NVIDIA drivers from backports (for RPCS3)
+
+- change /etc/apt/sources.list.d/backports.list from this:
+	```
+	deb https://deb.debian.org/debian buster-backports main
+	```
+- to this
+	```
+	deb https://deb.debian.org/debian buster-backports main contrib non-free
+	```
+
+```bash
+sudo apt update
+sudo apt install linux-headers-amd64
+sudo apt install -t buster-backports nvidia-driver
+```
+
