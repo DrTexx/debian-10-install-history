@@ -1716,3 +1716,9 @@ sudo apt install linux-headers-amd64
 sudo apt install -t buster-backports nvidia-driver
 ```
 
+Install RPCS3 as flatpak
+
+```bash
+flatpak install flathub net.rpcs3.RPCS3
+```
+
