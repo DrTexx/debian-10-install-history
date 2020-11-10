@@ -1722,3 +1722,9 @@ Install RPCS3 as flatpak
 flatpak install flathub net.rpcs3.RPCS3
 ```
 
+Reinstall Discord as flatpak
+
+```bash
+flatpak uninstall com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord
+```
