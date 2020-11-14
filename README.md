@@ -1744,5 +1744,5 @@ flatpak install flathub com.discordapp.Discord
 Install FreeTube as flatpak
 
 ```bash
-flatpak install flathub io.freetubapp.FreeTube
+flatpak install flathub io.freetubeapp.FreeTube
 ```
