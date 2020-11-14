@@ -1728,3 +1728,15 @@ Reinstall Discord as flatpak
 flatpak uninstall com.discordapp.Discord
 flatpak install flathub com.discordapp.Discord
 ```
+
+~~Download Freetube AppImage~~ (cancelled)
+
+- Download `FreeTube-0.9.2.AppImage` from https://github.com/FreeTubeApp/FreeTube/releases
+- Copy it to ~/Applications/AppImages
+- Make it executable
+  ```bash
+  chmod +x /home/denver/Applications/AppImages/FreeTube-0.9.2.AppImage
+  ```
+- Double-click to use
+- Getting sandbox error, giving up
+- Delete `FreeTube-0.9.2.AppImage`
