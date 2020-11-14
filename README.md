@@ -1740,3 +1740,9 @@ flatpak install flathub com.discordapp.Discord
 - Double-click to use
 - Getting sandbox error, giving up
 - Delete `FreeTube-0.9.2.AppImage`
+
+Install FreeTube as flatpak
+
+```bash
+flatpak install flathub io.freetubapp.FreeTube
+```
