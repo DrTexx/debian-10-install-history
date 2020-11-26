@@ -1746,3 +1746,8 @@ Install FreeTube as flatpak
 ```bash
 flatpak install flathub io.freetubeapp.FreeTube
 ```
+
+Install drawio as snap
+```
+sudo snap install drawio
+```
