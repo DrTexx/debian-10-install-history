@@ -1748,6 +1748,11 @@ flatpak install flathub io.freetubeapp.FreeTube
 ```
 
 Install drawio as snap
-```
+```bash
 sudo snap install drawio
+```
+
+Uninstall drawio as snap (my shell theme borks the UI)
+```bash
+sudo snap remove drawio
 ```
