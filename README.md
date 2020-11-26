@@ -1756,3 +1756,9 @@ Uninstall drawio as snap (my shell theme borks the UI)
 ```bash
 sudo snap remove drawio
 ```
+
+Download drawio as AppImage **(reverted)**
+- Download from [here](https://github.com/jgraph/drawio-desktop/releases/download/v13.9.9/draw.io-x86_64-13.9.9.AppImage)
+- Move to ~/Applications/AppImages/
+- Make executable
+- Delete draw.io-x86_64-13.9.9.AppImage (Fails to start due to sandbox stuff)
