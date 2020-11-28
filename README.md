@@ -1762,3 +1762,9 @@ Download drawio as AppImage **(reverted)**
 - Move to ~/Applications/AppImages/
 - Make executable
 - Delete draw.io-x86_64-13.9.9.AppImage (Fails to start due to sandbox stuff)
+
+Install sshfs
+
+```bash
+sudo apt install sshfs
+```
