@@ -1768,3 +1768,9 @@ Install sshfs
 ```bash
 sudo apt install sshfs
 ```
+
+Update flatpak packages (all suceeded except spotify update, even after retry)
+
+```bash
+flatpak update
+```
