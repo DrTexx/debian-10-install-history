@@ -1774,3 +1774,9 @@ Update flatpak packages (all suceeded except spotify update, even after retry)
 ```bash
 flatpak update
 ```
+
+Install /e/ OS easy installer
+
+```bash
+sudo snap install easy-installer --channel=latest/beta
+```
