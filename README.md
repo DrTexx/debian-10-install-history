@@ -1780,3 +1780,9 @@ Install /e/ OS easy installer
 ```bash
 sudo snap install easy-installer --channel=latest/beta
 ```
+
+Install FreeCAD as flatpak
+
+```bash
+flatpak install flathub org.freecadweb.FreeCAD
+```
