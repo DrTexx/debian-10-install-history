@@ -1786,3 +1786,52 @@ Install FreeCAD as flatpak
 ```bash
 flatpak install flathub org.freecadweb.FreeCAD
 ```
+
+Install Spotify-TUI as Snap
+
+```bash
+snap install spt
+```
+
+Install spotifyd
+
+- Get binary from [here](https://github.com/Spotifyd/spotifyd/releases/download/v0.3.0/spotifyd-linux-full.tar.gz)
+- Download it to `~/Applications/spotifyd-0.3.0/spotifyd-linux-full.tar.gz`
+- Extract binary to same folder
+- `cp ~/Applications/spotifyd-0.3.0/spotifyd /usr/bin/spotifyd`
+
+Install secret-tool
+
+```bash
+sudo apt install libsecret-tools
+```
+
+Configure spotifyd
+
+- Store password in keyring
+  - `secret-tool store --label='spotifyd' application rust-keyring service spotifyd username <your-username>`
+- `mkdir -p ~/.config/spotifyd`
+- `nano ~/.config/spotifyd/spotifyd.conf`
+	```toml
+	[global]
+	username = "<your-username>"
+	use_keyring = true
+	#use_mpris = true
+	backend = alsa
+	#device = "<your-audio-device>" # use aplay -L for a list of devices
+	#mixer = "PCM"
+	#volume_controller = "alsa"
+	device_name = "spotifyd_debian10"
+	bitrate = 320
+	#cache_path = "<absolute-path-to-cache-dir>"
+	no_audio_cache = true
+	volume_normalisation = true
+	normalisation_pregain = 0
+	device_type = "speaker"
+	```
+- Install service file for systemd
+  - `curl https://raw.githubusercontent.com/Spotifyd/spotifyd/master/contrib/spotifyd.service -o ~/.config/systemd/user/spotifyd.service`
+- Start service and enable at login
+  - `systemctl --user start spotifyd.service`
+  - `systemctl --user enable spotifyd.service`
+
