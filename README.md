@@ -1835,3 +1835,21 @@ Configure spotifyd
   - `systemctl --user start spotifyd.service`
   - `systemctl --user enable spotifyd.service`
 
+Install Boxtron (v0.5.4) manually (instructions from [here](https://github.com/dreamer/boxtron#installation-using-tarball-for-a-single-user))
+
+1. Install Debian dependencies
+
+	```bash
+	sudo apt install dosbox inotify-tools timidity fluid-soundfont-gm
+	```
+
+2. Download and unpack tarball to `compatibilitytools.d` directory (create one if it does not exist):
+
+	```bash
+	cd ~/.local/share/Steam/compatibilitytools.d/ || cd ~/.steam/root/compatibilitytools.d/
+	curl -L https://github.com/dreamer/boxtron/releases/download/v0.5.4/boxtron.tar.xz | tar xJf -
+	```
+
+3. Start/restart Steam.
+4. In game properties window select "Force the use of a specific Steam Play
+   compatibility tool" and select "Boxtron (native DOSBox)".
