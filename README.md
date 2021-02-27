@@ -1874,3 +1874,8 @@ Uninstall Slack (via snap)
 snap remove slack
 ```
 
+Install Rotki via AppImage
+- Download from here: https://github.com/rotki/rotki/releases/download/v1.14.2/rotki-linux_x86_64-v1.14.2.AppImage
+- Put in ~/Applications/AppImages
+- Make executable
+- Run it
