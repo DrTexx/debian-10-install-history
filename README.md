@@ -1853,3 +1853,18 @@ Install Boxtron (v0.5.4) manually (instructions from [here](https://github.com/d
 3. Start/restart Steam.
 4. In game properties window select "Force the use of a specific Steam Play
    compatibility tool" and select "Boxtron (native DOSBox)".
+
+Install stretchly via snap + apt requirements
+
+```bash
+snap install stretchly
+sudo apt install libappindicator1
+sudo sysctl kernel.unprivileged_userns_clone=1 # needed to start stretchly w/o rebooting first
+```
+
+- Create or modify `/etc/sysctl.d/00-local-userns.conf`
+  - Add the following line:
+	```conf
+	kernel.unprivileged_userns_clone=1
+	```
+
