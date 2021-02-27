@@ -1868,3 +1868,9 @@ sudo sysctl kernel.unprivileged_userns_clone=1 # needed to start stretchly w/o r
 	kernel.unprivileged_userns_clone=1
 	```
 
+Uninstall Slack (via snap)
+
+```bash
+snap remove slack
+```
+
