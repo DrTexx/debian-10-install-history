@@ -1404,7 +1404,7 @@ sudo snap install obs-studio
 - [work-around for driver nvidia driver issue](https://github.com/snapcrafters/obs-studio/issues/68#issuecomment-670948068)
 	```bash
 	SOURCE="/usr/lib/x86_64-linux-gnu"
-	DEST="/snap/obs-studio/1124/usr/lib/x86_64-linux-gnu/" # may need to change this\
+	DEST="/snap/obs-studio/current/usr/lib/x86_64-linux-gnu" # may need to change this
 	sudo mount --bind $SOURCE/libGL.so.1 $DEST/libGL.so.1
 	sudo mount --bind $SOURCE/libEGL.so.1 $DEST/libEGL.so.1.0.0
 	sudo mount --bind $SOURCE/libGLX.so.0 $DEST/libGLX.so.0
