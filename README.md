@@ -1887,3 +1887,15 @@ sudo apt update
 sudo apt upgrade
 ```
 
+Download Ledger Live as AppImage
+
+- download from here: https://download-live.ledger.com/releases/latest/download/linux
+- put in ~/Applications/AppImages
+- make executable
+- execute!
+
+Debug ledger connection
+
+- `wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash`
+- working now!
+
