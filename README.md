@@ -1899,6 +1899,18 @@ Debug ledger connection
 - `wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash`
 - working now!
 
+Uninstall unused flatpaks
+
+```bash
+flatpak uninstall --unused
+```
+
+Update Discord flatpak
+
+```bash
+flatpak update com.discordapp.Discord
+```
+
 Update flatpaks
 
 ```bash
