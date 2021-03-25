@@ -1879,3 +1879,11 @@ Install Rotki via AppImage
 - Put in ~/Applications/AppImages
 - Make executable
 - Run it
+
+Update apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
