@@ -1916,3 +1916,11 @@ Update flatpaks
 ```bash
 flatpak update
 ```
+
+Autoremove apt packages
+
+```bash
+sudo apt autoremove
+sudo apt autoclean
+```
+
