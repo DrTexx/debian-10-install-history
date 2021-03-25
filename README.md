@@ -1924,3 +1924,9 @@ sudo apt autoremove
 sudo apt autoclean
 ```
 
+Uninstall gog-galaxy-wine and parsec snap
+
+```bash
+snap remove gog-galaxy-wine
+sudo snap remove parsec
+```
