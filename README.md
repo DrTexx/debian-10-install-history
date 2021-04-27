@@ -1930,3 +1930,5 @@ Uninstall gog-galaxy-wine and parsec snap
 snap remove gog-galaxy-wine
 sudo snap remove parsec
 ```
+
+[2021/04/27] Download latest ledger live appimage, drop into ~/AppImages, make executable, ran it
