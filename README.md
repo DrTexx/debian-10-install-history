@@ -1932,3 +1932,9 @@ sudo snap remove parsec
 ```
 
 [2021/04/27] Download latest ledger live appimage, drop into ~/AppImages, make executable, ran it
+
+[2021/05/25] Update Discord flatpak
+
+```bash
+flatpak update com.discordapp.Discord
+```
