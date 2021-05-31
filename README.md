@@ -1938,3 +1938,15 @@ sudo snap remove parsec
 ```bash
 flatpak update com.discordapp.Discord
 ```
+
+[2021/05/26] Update Discord flatpak (again, lol)
+
+```bash
+flatpak update com.discordapp.Discord
+```
+
+[2021/05/31] Install obs-studio as flatpak
+
+```bash
+flatpak install flathub com.obsproject.Studio
+```
