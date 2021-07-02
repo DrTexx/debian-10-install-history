@@ -1950,3 +1950,10 @@ flatpak update com.discordapp.Discord
 ```bash
 flatpak install flathub com.obsproject.Studio
 ```
+
+[2021/07/02] update apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
