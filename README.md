@@ -1957,3 +1957,23 @@ flatpak install flathub com.obsproject.Studio
 sudo apt update
 sudo apt upgrade
 ```
+
+[2021/07/12] install wireless driver
+
+```bash
+# build
+cd ~/github
+git clone https://github.com/gnab/rtl8812au.git
+cd rtl8812au/
+make
+# test
+sudo insmod 8812au.ko
+# -- test the wireless adapter now works, then continue
+# install
+sudo cp 8812au.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless
+sudo depmod
+# dkms
+sudo apt install build-essential dkms # won't install anything if entire install history has been followed
+sudo make dkms_install
+echo 8812au | sudo tee -a /etc/modules
+```
