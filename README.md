@@ -1977,3 +1977,30 @@ sudo apt install build-essential dkms # won't install anything if entire install
 sudo make dkms_install
 echo 8812au | sudo tee -a /etc/modules
 ```
+
+[2021/07/12] install OpenVPN + configure Mullvad stuff ([reference](https://mullvad.net/en/help/linux-openvpn-installation/))
+```bash
+sudo apt install openvpn network-manager-openvpn network-manager-openvpn-gnome
+# when prompted about outstading bug by apt-listbugs, type y and hit enter
+mkdir ~/Config
+```
+
+- Get VPN config files from https://mullvad.net/en/account/#/openvpn-config/?platform=android
+  1. Platform - Android/Chrome OS
+  2. Location - All countries - All Cities
+  3. Download ZIP archive, put it in ~/Config
+  4. Extract contents of ZIP archive into same directory as the archive (~/Config)
+  5. Navigate to settings > network > VPN > + (add)
+  6. Select "Import from file..."
+  7. Select ~/Config/mullvad_config_android/mullvad_au_all.ovpn
+  8. Set the username to your mullvad account number (check PW manager)
+  9. Set the password to "m"
+  10. Click "add"
+
+```bash
+sudo service network-manager restart
+```
+
+- Enable VPN
+  1. Go to settings > network > VPN
+  2. Enable mullvad_au_all VPN toggle
