@@ -2004,3 +2004,9 @@ sudo service network-manager restart
 - Enable VPN
   1. Go to settings > network > VPN
   2. Enable mullvad_au_all VPN toggle
+
+[2021/07/13] Adjust firewall for LIFX on new WiFi
+```bash
+sudo ufw allow from 10.0.0.0/24 port 56700
+sudo ufw delete allow from 192.168.20.0/24 port 56700
+```
