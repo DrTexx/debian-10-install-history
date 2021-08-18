@@ -2017,3 +2017,10 @@ sudo ufw delete allow from 192.168.20.0/24 port 56700
 flatpak update net.pcsx2.PCSX2
 ```
 
+[2021/08/18] update apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
