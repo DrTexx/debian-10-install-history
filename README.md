@@ -2024,3 +2024,8 @@ sudo apt update
 sudo apt upgrade
 ```
 
+[2021/08/18] install krita
+
+```bash
+sudo apt install krita
+```
