@@ -2010,3 +2010,10 @@ sudo service network-manager restart
 sudo ufw allow from 10.0.0.0/24 port 56700
 sudo ufw delete allow from 192.168.20.0/24 port 56700
 ```
+
+[2021/08/12] Update PCSX2 flatpak
+
+```bash
+flatpak update net.pcsx2.PCSX2
+```
+
