@@ -2030,7 +2030,7 @@ sudo apt upgrade
 sudo apt install krita
 ```
 
-[2021/08/28] update pipenv application's virtual env's pip + setuptools + wheel version
+[2021/08/28] update pipenv and pipenv venv's pip + setuptools + wheel versions
 
 ```bash
 cd ~/Applications/pipenv
@@ -2038,6 +2038,7 @@ source bin/activate
 # ENSURE-ENSURE ENSURE ENSURE YOU'RE IN THE VENV FIRST!
 # Check with pip -V and pip3 -V!!!
 pip install --upgrade pip setuptools wheel
+pip install --upgrade pipenv
 deactivate
 # ENSURE, ENSURE, ENSURE YOU'VE LEFT THE VENV!!
 ```
