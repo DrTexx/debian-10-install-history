@@ -2042,3 +2042,10 @@ pip install --upgrade pipenv
 deactivate
 # ENSURE, ENSURE, ENSURE YOU'VE LEFT THE VENV!!
 ```
+
+[2021/10/07] update packages
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
