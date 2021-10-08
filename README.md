@@ -2049,3 +2049,13 @@ deactivate
 sudo apt update
 sudo apt upgrade
 ```
+
+[2021/10/08] update packages + flatpaks
+
+```bash
+flatpak update
+sudo apt update
+sudo apt upgrade
+flatpak uninstall --unused
+flatpak update
+```
