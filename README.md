@@ -2059,3 +2059,10 @@ sudo apt upgrade
 flatpak uninstall --unused
 flatpak update
 ```
+
+[20211108] install mattermost flatpak, uninstall after running (crashes)
+
+```bash
+flatpak install flathub com.mattermost.Desktop
+flatpak uninstall com.mattermost.Desktop
+```
