@@ -2066,3 +2066,11 @@ flatpak update
 flatpak install flathub com.mattermost.Desktop
 flatpak uninstall com.mattermost.Desktop
 ```
+
+[20211108] download mattermost as linux executable
+
+- Download `https://releases.mattermost.com/desktop/5.0.1/mattermost-desktop-5.0.1-linux-x64.tar.gz`
+- Verify sha256 checksum `c040a619cb9c014059bcfb9b207854dd034028cef4c169917c48ddda6650d866`
+- Extract `mattermost-desktop-5.0.1-linux-x64.tar.gz` to `~/Applications/mattermost`
+- Make .desktop file executable
+- Execute .desktop file from terminal
