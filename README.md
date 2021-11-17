@@ -2074,3 +2074,15 @@ flatpak uninstall com.mattermost.Desktop
 - Extract `mattermost-desktop-5.0.1-linux-x64.tar.gz` to `~/Applications/mattermost`
 - Make .desktop file executable
 - Execute .desktop file from terminal
+
+[2021/11/17] download + install yt-dlp because youtube-dl speeds are borked
+
+```bash
+cd ~/Applications
+python3 -m venv yt-dlp
+cd yt-dlp
+source bin/activate
+pip install yt-dlp
+deactivate
+```
+
