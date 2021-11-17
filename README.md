@@ -2137,3 +2137,8 @@ cp ~/Applications/PATCHES/stretchly/stretchly_stretchly.desktop ~/.config/autost
 chmod -x ~/.config/autostart/stretchly_stretchly.desktop # don't make executable, all other files weren't executable either
 ```
 
+[2021/11/17] remove keybase autostart entry
+
+```bash
+rm ~/.config/autostart/keybase_autostart.desktop
+```
