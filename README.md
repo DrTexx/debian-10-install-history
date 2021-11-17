@@ -2060,14 +2060,14 @@ flatpak uninstall --unused
 flatpak update
 ```
 
-[20211108] install mattermost flatpak, uninstall after running (crashes)
+[2021/11/08] install mattermost flatpak, uninstall after running (crashes)
 
 ```bash
 flatpak install flathub com.mattermost.Desktop
 flatpak uninstall com.mattermost.Desktop
 ```
 
-[20211108] download mattermost as linux executable
+[2021/11/08] download mattermost as linux executable
 
 - Download `https://releases.mattermost.com/desktop/5.0.1/mattermost-desktop-5.0.1-linux-x64.tar.gz`
 - Verify sha256 checksum `c040a619cb9c014059bcfb9b207854dd034028cef4c169917c48ddda6650d866`
