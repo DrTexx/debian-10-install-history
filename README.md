@@ -2099,11 +2099,7 @@ rm ~/.config/autostart/stretchly_stretchly.desktop # realized that their package
   - Stretchly .desktop file can be found under `/var/lib/snapd/desktop/applications/stretchly_stretchly.desktop`
 
 ```bash
-cd ~/Applications
-mkdir PATCHES
-cd PATCHES
-mkdir stretchly
-cd stretchly
+mkdir -p ~/Applications/PATCHES/stretchly
 cp /var/lib/snapd/desktop/applications/stretchly_stretchly.desktop ~/Applications/PATCHES/stretchly/
 ```
 
