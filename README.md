@@ -2086,3 +2086,54 @@ pip install yt-dlp
 deactivate
 ```
 
+[2021/11/17] make stretchly start on boot (and fix launching from system search)
+
+```bash
+ln -s /var/lib/snapd/desktop/applications/stretchly_stretchly.desktop ~/.config/autostart/stretchly_stretchly.desktop
+rm ~/.config/autostart/stretchly_stretchly.desktop # realized that their packaged .desktop file doesn't work (crashes)
+```
+
+- Create derivative of icon with band-aid over it to distinguish between the packaged version and mine
+  - Stretchly icon can be found under `/snap/stretchly/6/meta/gui/icon.png`
+- Write own .desktop file that works (using derivative icon)
+  - Stretchly .desktop file can be found under `/var/lib/snapd/desktop/applications/stretchly_stretchly.desktop`
+
+```bash
+cd ~/Applications
+mkdir PATCHES
+cd PATCHES
+mkdir stretchly
+cd stretchly
+cp /var/lib/snapd/desktop/applications/stretchly_stretchly.desktop ~/Applications/PATCHES/stretchly/
+```
+
+- Copy derivative icon to `~/Applications/PATCHES/stretchly/icon_fixed.png`
+- Replace contents of `~/Applications/PATCHES/stretchly/stretchly_stretchly.desktop` with the following:
+
+```
+[Desktop Entry]
+Type=Application
+Name=Stretchly
+GenericName=Break Reminder
+Comment=The break time reminder app
+Icon=/home/denver/Applications/PATCHES/stretchly/icon_fixed.png
+Exec=/snap/stretchly/current/stretchly %u
+Terminal=false
+StartupWMClass=Stretchly
+Categories=Utility;
+```
+
+- Create symlink to new .desktop file
+
+```bash
+ln -s ~/Applications/PATCHES/stretchly/stretchly_stretchly.desktop ~/.local/share/applications
+```
+
+- WOOOOOO Launching from gnome system search works, icon and all! (may take a sec to update)
+- Copy .desktop file to autostart Stretchly!
+
+```bash
+cp ~/Applications/PATCHES/stretchly/stretchly_stretchly.desktop ~/.config/autostart/
+chmod -x ~/.config/autostart/stretchly_stretchly.desktop # don't make executable, all other files weren't executable either
+```
+
