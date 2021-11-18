@@ -1394,7 +1394,7 @@ Install obs-v4l2sink
 sudo apt install /home/denver/Applications/PACKAGES/obs-v4l2sink.deb
 ```
 
-- Didn't work, at least it's not working without a reboot :\
+- Didn't work, at least it's not working without a reboot :/
 
 Install obs-studio (snap version)
 
@@ -1769,7 +1769,7 @@ Install sshfs
 sudo apt install sshfs
 ```
 
-Update flatpak packages (all suceeded except spotify update, even after retry)
+Update flatpak packages (all succeeded except spotify update, even after retry)
 
 ```bash
 flatpak update
@@ -1981,7 +1981,7 @@ echo 8812au | sudo tee -a /etc/modules
 [2021/07/12] install OpenVPN + configure Mullvad stuff ([reference](https://mullvad.net/en/help/linux-openvpn-installation/))
 ```bash
 sudo apt install openvpn network-manager-openvpn network-manager-openvpn-gnome
-# when prompted about outstading bug by apt-listbugs, type y and hit enter
+# when prompted about outstanding bug by apt-listbugs, type y and hit enter
 mkdir ~/Config
 ```
 
