@@ -2138,3 +2138,9 @@ chmod -x ~/.config/autostart/stretchly_stretchly.desktop # don't make executable
 ```bash
 rm ~/.config/autostart/keybase_autostart.desktop
 ```
+
+[2021/12/19] install inkscape via flathub
+
+```bash
+flatpak install flathub org.inkscape.Inkscape
+```
