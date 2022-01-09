@@ -2144,3 +2144,9 @@ rm ~/.config/autostart/keybase_autostart.desktop
 ```bash
 flatpak install flathub org.inkscape.Inkscape
 ```
+
+[2022/01/09] install xournalpp via snap
+
+```bash
+sudo snap install xournalpp
+```
