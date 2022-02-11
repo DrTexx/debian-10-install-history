@@ -2150,3 +2150,15 @@ flatpak install flathub org.inkscape.Inkscape
 ```bash
 sudo snap install xournalpp
 ```
+
+[2022/02/09] install persepolis via snap
+
+```bash
+sudo snap install persepolis
+```
+
+[2022/02/11] uninstall persepolis via snap
+
+```bash
+sudo snap remove persepolis
+```
