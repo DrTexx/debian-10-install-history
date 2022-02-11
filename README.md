@@ -2162,3 +2162,9 @@ sudo snap install persepolis
 ```bash
 sudo snap remove persepolis
 ```
+
+[2022/02/11] install scanmem and gameconqueror via apt
+
+```bash
+sudo apt install scanmem gameconqueror
+```
