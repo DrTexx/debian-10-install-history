@@ -2168,3 +2168,9 @@ sudo snap remove persepolis
 ```bash
 sudo apt install scanmem gameconqueror
 ```
+
+[2022/02/12] update PCSX2
+
+```bash
+flatpak update net.pcsx2.PCSX2
+```
