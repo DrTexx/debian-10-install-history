@@ -2174,3 +2174,11 @@ sudo apt install scanmem gameconqueror
 ```bash
 flatpak update net.pcsx2.PCSX2
 ```
+
+[2022/02/27] temporarily allow Wireless Xbox One controller (Model 1708) to connect over vanilla Bluetooth
+
+```bash
+sudo -s
+echo 'Y' > /sys/module/bluetooth/parameters/disable_ertm
+exit # NOTE: should only return prompt to initial user instead of root
+```
