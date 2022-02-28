@@ -34,6 +34,11 @@ or for shorted IDs
 #### List available prompt types
 `$ ls /usr/bin | grep pinentry`
 #### Change default prompt type
+### Archives
+#### Create password-protected .7z archive
+`$ 7z a <ARCHIVE_NAME> -p -mhe=on` (`-mhe=on` is required to hide file structure)
+#### Unpack .7z archive (works when password protected)
+`$ 7z x <ARCHIVE_NAME>`
 
 
 Once you've saved the file and re-opened bash, you can type `[alias_name]` to execute `{command} [command args]`
