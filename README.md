@@ -2182,3 +2182,8 @@ sudo -s
 echo 'Y' > /sys/module/bluetooth/parameters/disable_ertm
 exit # NOTE: should only return prompt to initial user instead of root
 ```
+
+[2022/02/28] install non-free (but I believe open-source) RAR extension for p7zip (linux port of 7zip) via apt
+```bash
+sudo apt install p7zip-rar
+```
