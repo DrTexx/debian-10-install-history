@@ -2193,3 +2193,9 @@ exit # NOTE: should only return prompt to initial user instead of root
 ```bash
 sudo apt install p7zip-rar
 ```
+
+[2022/03/03] install MusicBrainz Picard via apt
+
+```bash
+sudo apt install picard
+```
