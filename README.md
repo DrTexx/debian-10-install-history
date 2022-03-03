@@ -2199,3 +2199,11 @@ sudo apt install p7zip-rar
 ```bash
 sudo apt install picard
 ```
+
+[2022/03/03] reinstall MusicBrainz Picard via snap instead of apt (old version)
+
+```bash
+sudo apt remove picard
+sudo snap install picard
+sudo snap connect picard:removable-media
+```
