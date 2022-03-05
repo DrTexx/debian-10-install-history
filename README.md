@@ -2207,3 +2207,9 @@ sudo apt remove picard
 sudo snap install picard
 sudo snap connect picard:removable-media
 ```
+
+[2022/03/05] install rclone via apt
+
+```bash
+sudo apt install rclone
+```
