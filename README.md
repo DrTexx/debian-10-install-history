@@ -2229,3 +2229,11 @@ git pull
 # already linked .desktop file
 # already linked the icon file
 ```
+
+[2022/03/22] re-enable debian-specific patch to disable userns clone (may break stretchly, but crashing anyway)
+
+```bash
+sudo nano /etc/sysctl.d/00-local-userns.conf
+# IMPORTANT: ENSURE FILE ONLY CONTAINS THIS LINE: kernel.unprivileged_userns_clone=1
+sudo rm /etc/sysctl.d/00-local-userns.conf
+```
