@@ -2213,3 +2213,19 @@ sudo snap connect picard:removable-media
 ```bash
 sudo apt install rclone
 ```
+
+[2022/03/22] replace .desktop RPCS3 version with latest downloaded release (instead of v0.0.7-9177-2290c389)
+
+```bash
+# remove existing /usr/local/bin symlink
+sudo rm /usr/local/bin/rpcs3
+# already have latest downloaded release, skip downloading anything (implied by 'latest downloaded')
+# add new /usr/local/bin symlink
+sudo ln -s /home/denver/Applications/AppImages/rpcs3-latest_linux64.AppImage /usr/local/bin/rpcs3
+# already cloned RPCS3 repo for desktop assets/config, just update them
+cd /home/denver/github/rpcs3
+git pull
+# IMPORTANT: double check .desktop file doesn't have anything suspicious or malicious looking, just in case repo compromised in past
+# already linked .desktop file
+# already linked the icon file
+```
