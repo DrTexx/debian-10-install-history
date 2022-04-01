@@ -2237,3 +2237,33 @@ sudo nano /etc/sysctl.d/00-local-userns.conf
 # IMPORTANT: ENSURE FILE ONLY CONTAINS THIS LINE: kernel.unprivileged_userns_clone=1
 sudo rm /etc/sysctl.d/00-local-userns.conf
 ```
+
+[2022/03/22] gamemode + rpcs3 notes (NOTES)
+
+WHILE LAUNCHING RPCS3 with gamemode
+- Little Big Planet performance WAY better! (still not a stable 30fps in story level tested, but much better!)
+  - after comparing without gamemode (with rpcs3 version being v0.0.21-13360-5797673d), performance only seems to have been marginally better
+- SKATE 2 ALSO WAY BETTER, but computer still not quite beefy enough to handle Skate 2 physics without slow-down (actual rendering seem more-or-less 50-60 fps, but actually passage of time seems affected in more demanding areas)
+  - after comparison, same situation as Little Big Planet however performance boost seems a bit more noticable than LBP, however not as dramatic as first thought. Probably worth it for Skate 2 if desperate to play in a less demanding area.
+
+[2022/04/01] replace uMatrix with uBlock advanced mode (Firefox)
+
+- Disable uMatrix
+- Open uBlock settings
+- Enable "Advanced mode"
+- Switch to "Medium Mode"
+  - Click extension badge
+  - Disable 3rd-party scripts globally
+  - Disable 3rd-party frames globally
+- Update list definitions
+  - Go to extension dashboard (cog icon in extension badge menu)
+  - Go to "filter lists"
+  - Click "purge all caches"
+  - Remove any custom lists that are duplicates of existing lists (had two this time around)
+  - Click "apply changes"
+  - Click "update now"
+
+[2022/04/01] install privacy redirect (Firefox)
+
+- install privacy redirect from official Firefox Addons page
+- disable nitter redirects (alternative Twitter front-end)
