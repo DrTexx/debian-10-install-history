@@ -2267,3 +2267,109 @@ WHILE LAUNCHING RPCS3 with gamemode
 
 - install privacy redirect from official Firefox Addons page
 - disable nitter redirects (alternative Twitter front-end)
+
+[2023/12/15] Install Mullvad VPN desktop app
+
+- `sudo apt update`
+- download latest .deb from https://mullvad.net/en/download/app/deb/latest
+- save `MullvadVPN-2023.6_amd64.deb` to `~/Applications/PACKAGES`
+- NOTE: continued in next step
+
+[2023/12/16] Install Mullvad VPN desktop app (cont.)
+
+- NOTE: out of disk space, clearing some
+  - `flatpak uninstall io.freetubeapp.FreeTube com.spotify.Client`
+  - `snap remove cataclysm`
+- `sudo apt update`
+- `flatpak uninstall --unused`
+- `sudo apt update`
+- `sudo apt upgrade --fix-missing`
+- `sudo apt update`
+- `sudo apt install ~/Applications/PACKAGES/MullvadVPN-2023.6_amd64.deb`
+- start mullvad desktop app
+
+[2023/12/16] uninstall privacy redirect (Firefox)
+
+- uninstall privacy redirect
+- reboot
+
+[2023/12/20] clean up reminants of Spotify flatpak (already uninstalled earlier, but 9.9GB of files left in `~/.var`!)
+
+```bash
+rm -r ~/.var/app/com.spotify.Client/
+```
+
+[2023/12/20] uninstall Steam games to clear bloat (planning to do a system reinstall anyway, so removing stuff I'm not backing up so it's easier to track what's left to back up)
+
+- Uninstall games via Steam
+  - SteamVR
+  - Unrailed!
+  - Teardown
+  - Factorio
+  - Shadow Warrior Classic (1997)
+
+[2023/12/20] Install tree via apt
+
+```bash
+sudo apt install tree
+```
+
+[2023/12/20] (note) Recursively print dir tree along with human-readable file sizes, sorted by file size, in JSON representation
+
+```bash
+pushd ~
+tree -shDJ --sort="size"
+popd
+```
+
+[2023/12/20] clone dir for new code for helping do manual backup
+
+```bash
+pushd ~/github
+git clone git@github.com:DrTexx/manual-backup-assistant.git # ERROR - host key and fingerprint changed
+# NOTE: Quick detour: update github fingerprint based on instructions in this blog post from Github re. them changing their SSH key after a security incident - https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/
+ssh-keygen -R github.com
+git clone git@github.com:DrTexx/manual-backup-assistant.git # ERROR - permission denied (publickey)
+# NOTE: this added ECDSA fingerprint, not the RSA one - gonna remove this one
+ssh-keygen -R github.com
+```
+
+- Re-add public ssh key already on PC (`~/.ssh/id_rsa.pub`, it's the one for Github) back to Github with name "prion-dec-2023-deb10"
+- Add the following lines to `~/.ssh/config`
+	```
+	Host github.com
+        User DrTexx
+        Hostname github.com
+        IdentityFile ~/.ssh/id_rsa
+	```
+- Add the following line to the bottom of `~/.ssh/known_hosts`: `github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=`
+- **Remove** the line containing `ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=` from `~/.ssh/known_hosts`
+
+```bash
+git clone git@github.com:DrTexx/manual-backup-assistant.git
+popd
+```
+
+[2023/12/20] Install pipx via apt (to install poetry)
+
+```bash
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
+```
+
+[2023/12/20] Install Poetry via pipx
+
+```bash
+pipx install poetry
+```
+
+- open a new terminal session (path was updated)
+
+[2023/12/20] Remove three corrupted filenames from `~/.steam/debian-installation` (after investigating, they were all .ico icons for games - Inside, Just Cause 3 and Portal - although the portal one was a .zip archive with three diff res versions of the portal icon, and I think those icons were .ico icons also)
+
+[2023/12/20] Delete `~/.local/share/SpeedRunners/` directory bc it contained a directory with an illegal name (`/home/denver/.local/share/SpeedRunners/CEngineStorage/AllPlayers/Ghost\Replay` - notice the backslash?)
+
+```bash
+rm -r ~/.local/share/SpeedRunners/
+```
