@@ -2373,3 +2373,9 @@ pipx install poetry
 ```bash
 rm -r ~/.local/share/SpeedRunners/
 ```
+
+[2023/12/20] Clean up Zoom reminants in `~/.var/app`
+
+```bash
+rm -r ~/.var/app/us.zoom.Zoom
+```
