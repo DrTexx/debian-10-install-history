@@ -2379,3 +2379,30 @@ rm -r ~/.local/share/SpeedRunners/
 ```bash
 rm -r ~/.var/app/us.zoom.Zoom
 ```
+
+[2023/12/21] Install pyenv via install steps (this seems to be the best installation method for my system) (see [here](https://github.com/pyenv/pyenv/tree/master#basic-github-checkout))
+
+```bash
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+# add required stuff to ~/.bashrc
+echo '' >> ~/.bashrc
+echo '# pyenv' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+# add required stuff to ~/.profile
+echo '' >> ~/.profile
+echo '# pyenv' >> ~/.profile
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
+echo 'eval "$(pyenv init -)"' >> ~/.profile
+# install Python build dependencies (will be required to install new versions of Python)
+sudo apt update
+sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+
+[2023/12/21] Install Python3.10 using Pyenv
+
+```bash
+pyenv install 3.10
+```
