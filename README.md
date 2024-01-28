@@ -2406,3 +2406,18 @@ sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-de
 ```bash
 pyenv install 3.10
 ```
+
+[2024/01/03] Add gamemoderun to Bomb Rush Cyberfunk launch options
+
+- In Steam, set the launch options for Bomb Rush Cyberfunk to `gamemoderun %`
+
+[2024/01/03] Add gamemoderun to Neon White launch options
+
+- In Steam, set the launch options for Neon White to `gamemoderun %`
+
+[2024/01/28] Update + upgrade apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade --ignore-missing
+```
