@@ -2421,3 +2421,10 @@ pyenv install 3.10
 sudo apt update
 sudo apt upgrade --ignore-missing
 ```
+
+[2024/02/18] Uninstall FreeCAD and Discord via flatpak (to free up some space on parition)
+
+```bash
+flatpak uninstall org.freecadweb.FreeCAD
+flatpak uninstall com.discordapp.Discord
+```
