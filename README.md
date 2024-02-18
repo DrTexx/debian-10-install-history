@@ -2466,3 +2466,13 @@ sudo ln -s /home/denver/Applications/open-latest-screenshot/bin/open-latest-scre
 deactivate
 pyenv shell - # revert back to original Python version shell was using
 ```
+
+Create custom keyboard shortcut for open-latest-screenshot
+
+- Open GNOME settings
+- Navigate to `Devices > Keyboard > Keyboard Shortcuts > Custom Shortcuts`
+- Click the Add Shortcut button (+)
+- Set the name, command and shortcut to the following:
+  - name: Open latest screenshot
+  - command: open-latest-screenshot
+  - shortcut: Ctrl + Alt + L
