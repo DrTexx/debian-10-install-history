@@ -2451,3 +2451,18 @@ sudo apt upgrade --ignore-missing
 - `./ledger-live-desktop-2.75.0-linux-x86_64.AppImage` (same error again about SUID sandbox helper binary)
 - Begrungingly run `./ledger-live-desktop-2.75.0-linux-x86_64.AppImage --no-sandbox` (from what I can see only doesn't seem to be any good easy fix for me right now, this is fine for the moment)
 - app opened, but can't connect to ledger properly :\
+
+Install open-latest-screenshot via pip in venv
+
+```bash
+cd ~/Applications
+pyenv shell 3.8
+python -V # check pyenv set shell version to 3.8 successfully
+python3 -m venv open-latest-screenshot
+cd open-latest-screenshot
+source bin/activate
+pip install openlatestscreenshot
+sudo ln -s /home/denver/Applications/open-latest-screenshot/bin/open-latest-screenshot /usr/local/bin/open-latest-screenshot
+deactivate
+pyenv shell - # revert back to original Python version shell was using
+```
