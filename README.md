@@ -2428,3 +2428,26 @@ sudo apt upgrade --ignore-missing
 flatpak uninstall org.freecadweb.FreeCAD
 flatpak uninstall com.discordapp.Discord
 ```
+
+[2024/02/18] Download latest version of Ledger Live flatpak
+
+- Download latest flatpak from `https://download.live.ledger.com/latest/linux` and put file into `~/Applications/AppImages/`
+- Make newly downloaded AppImage executable
+
+```bash
+cd ~/Applications/AppImages
+chmod +x ledger-live-desktop-2.75.0-linux-x86_64.AppImage
+```
+
+- Double-click AppImage from Nautilus to launch it (didn't work)
+- `./ledger-live-desktop-2.75.0-linux-x86_64.AppImage` (error about SUID sandbox helper binary)
+- Try updating packages
+
+```bash
+sudo apt update
+sudo apt upgrade --ignore-missing
+```
+
+- `./ledger-live-desktop-2.75.0-linux-x86_64.AppImage` (same error again about SUID sandbox helper binary)
+- Begrungingly run `./ledger-live-desktop-2.75.0-linux-x86_64.AppImage --no-sandbox` (from what I can see only doesn't seem to be any good easy fix for me right now, this is fine for the moment)
+- app opened, but can't connect to ledger properly :\
