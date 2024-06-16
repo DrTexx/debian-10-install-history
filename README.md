@@ -2496,3 +2496,22 @@ flatpak uninstall org.inkscape.Inkscape
 sudo apt update
 sudo apt upgrade --ignore-missing
 ```
+
+[2024/06/16] Reconfigure VPN with latest config using OpenVPN
+
+- Download config from [here](https://mullvad.net/en/account/openvpn-config?platform=linux)
+- Add new VPN from config file in settings app using the `.conf` file from the extracted zip
+- Add the username and password from the `mullvad_userpass.txt` file contained in the same dir to the VPN config you just added
+- Enable the VPN
+- Check connected successfully on Mullvad website (you'll get a green lock icon at the top)
+- Move the `mullvad_ca.crt` file to `/usr/local/etc/openvpn_folder_created_by_denver` and update owner/perms
+
+```bash
+sudo mkdir /usr/local/etc/openvpn_folder_created_by_denver
+sudo mv ~/Downloads/mullvad_openvpn_linux_au_mel/mullvad_config_linux_au_mel/mullvad_ca.crt /usr/local/etc/openvpn_folder_created_by_denver
+sudo chown root:root /usr/local/etc/openvpn_folder_created_by_denver/mullvad_ca.crt # update file owner and group
+sudo chmod 644 mullvad_ca.crt # update file perms (probably not necessary after file owner/group update, but might as well)
+```
+
+- Update VPN config to reflect new cert location
+- Delete openvpn config zip file and remaining unzipped files from downloads folder
