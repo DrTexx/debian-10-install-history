@@ -2476,3 +2476,10 @@ Create custom keyboard shortcut for open-latest-screenshot
   - name: Open latest screenshot
   - command: open-latest-screenshot
   - shortcut: Ctrl + Alt + L
+
+[2024/03/06] Adjust firewall for LIFX on other WiFi
+
+```bash
+sudo ufw delete allow from 10.0.0.0/24 port 56700
+sudo ufw allow from 192.168.20.0/24 port 56700
+```
