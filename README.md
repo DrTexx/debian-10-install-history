@@ -2489,3 +2489,10 @@ sudo ufw allow from 192.168.20.0/24 port 56700
 ```bash
 flatpak uninstall org.inkscape.Inkscape
 ```
+
+[2024/04/25] Upgrade apt packages
+
+```bash
+sudo apt update
+sudo apt upgrade --ignore-missing
+```
