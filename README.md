@@ -2483,3 +2483,9 @@ Create custom keyboard shortcut for open-latest-screenshot
 sudo ufw delete allow from 10.0.0.0/24 port 56700
 sudo ufw allow from 192.168.20.0/24 port 56700
 ```
+
+[2024/04/10] Uninstall Inkscape via Flatpak
+
+```bash
+flatpak uninstall org.inkscape.Inkscape
+```
