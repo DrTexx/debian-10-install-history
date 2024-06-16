@@ -2519,3 +2519,12 @@ sudo chmod 644 mullvad_ca.crt # update file perms (probably not necessary after 
 [2024/06/16] Install FoxyTab Firefox browser extension
 
 - Install FoxyTab Firefox browser extension
+
+[2024/06/16] Update yt-dlp via pip in venv
+
+```bash
+cd ~/Applications/yt-dlp
+source bin/activate
+pip install yt-dlp --upgrade
+deactivate
+```
