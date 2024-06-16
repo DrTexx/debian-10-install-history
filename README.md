@@ -2515,3 +2515,7 @@ sudo chmod 644 mullvad_ca.crt # update file perms (probably not necessary after 
 
 - Update VPN config to reflect new cert location
 - Delete openvpn config zip file and remaining unzipped files from downloads folder
+
+[2024/06/16] Install FoxyTab Firefox browser extension
+
+- Install FoxyTab Firefox browser extension
